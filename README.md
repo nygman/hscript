@@ -19,7 +19,7 @@ Hola Unblocker HScript
 ### Sharing your HScript:
   * We recommend that you open your own Github or similar repository for all the HScript and HScript Packages you create
   * A Hola user that wants to use an HScript that you wrote just needs to click on the link you provided for that HScript (which you received from the Hola Unblocker settings webpage when you submitted it), and it is then automatically added to their Hola Unblocker configuration
-  * The user can remove the HScript at any time from his their Unblocker settings by pressing "delete" at the top of the site rule
+  * The user can remove the HScript at any time from their Unblocker settings by pressing "delete" at the top of the site rule
 
 Good luck!
 The Hola team
