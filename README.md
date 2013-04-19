@@ -1,8 +1,8 @@
-# Hola Unblocker HScript
+# hscript: Hola Unblocker Script
 A personal configurable VPN proxy
 
-## HScript package example:
-Install the HScript package [Hola Redirect Demo](http://hola.org/share?sid=ca7bb33efed0bc08) now:
+## hscript package example:
+Install the hscript package [Hola Redirect Demo](http://hola.org/share?sid=ca7bb33efed0bc08) now:
 
     {
         "name": "Hola Redirect Demo",
@@ -64,9 +64,9 @@ Install the HScript package [Hola Redirect Demo](http://hola.org/share?sid=ca7bb
             }
         }
     }
-> Access the website by routing ONLY the URLs that are authenticated through peers in that country (and leave the rest of the URLs unrouted). The above HScript package example routes IP requests through the Hola network in three different countries.  Example: instruct Hola to route all requests to yoursite.com to be routed through PROXY ES in Spain to see how your site looks to a Spanish user.
+> Access the website by routing ONLY the URLs that are authenticated through peers in that country (and leave the rest of the URLs unrouted). The above hscript package example routes IP requests through the Hola network in three different countries.  Example: instruct Hola to route all requests to yoursite.com to be routed through PROXY ES in Spain to see how your site looks to a Spanish user.
 
-Install the HScript for Android [Hola Facebook Demo](http://hola.org/share?sid=0232ffff56b8ab0f) now:
+Install the hscript for Android [Hola Facebook Demo](http://hola.org/share?sid=0232ffff56b8ab0f) now:
 
     {
         "name": "Hola Facebook Demo",
@@ -99,25 +99,25 @@ Install the HScript for Android [Hola Facebook Demo](http://hola.org/share?sid=0
             }
         }
     }
-> This Facebook.com HScript instructs Hola Unblocker requests to route through PROXY US agents on the Hola network. For example, requests originating in Iran will be routed through Hola, allowing Iranian residents access to Facebook despite locally blocked IPs.
+> This Facebook.com hscript instructs Hola Unblocker requests to route through PROXY US agents on the Hola network. For example, requests originating in Iran will be routed through Hola, allowing Iranian residents access to Facebook despite locally blocked IPs.
 
 ## Intro:
-HScript, or Hola Script, by [Hola](http://hola.org) lets you:
+hscript, or Hola script, by [Hola](http://hola.org) lets you:
 
 * Configure routing rules for a set of URLs for use with the Hola Unblocker VPN Proxy
-* Create an HScript Package by including several rules within one HScript
-* Share your HScript rules and HScript Packages with the whole world
+* Create an hscript Package by including several rules within one hscript
+* Share your hscript rules and hscript Packages with the whole world
 
 ## API:
     {
-        "name": "Your HScript or HScript package name",
+        "name": "Your hscript or hscript package name",
         "author": "Your name",
-        "description": "Optional - A description of the author, HScript, HScript package, etc)",
+        "description": "Optional - A description of the author, hscript, hscript package, etc)",
         "site": "Link to your website/Facebook/Twitter/Github, etc",
         "icon": "Optional - HTTP link to icon)",
         "unblocker_rules": {
             "unblocker_rules.RULE1": {
-                "description": "Optional - A description of the HScript rule",
+                "description": "Optional - A description of the hscript rule",
                 "link": "HTTP link to site",
                 "icon": "Optional - HTTP link to icon",
                 "os": [
@@ -166,18 +166,14 @@ HScript, or Hola Script, by [Hola](http://hola.org) lets you:
 
 ### Let's break it down:
 
-
-    field (type, required)
-*format of the following json descriptions*
-
     name (string, optional)
-*Name of the HScript RULE or package of RULES*
+*Name of the hscript RULE or package of RULES*
 
     author (string, optional)
 *Credits the author*
 
     description (string, optional)
-*Describes the HScript or HScript package with free text*
+*Describes the hscript or hscript package with free text*
 
     site (string, optional)
 *URL of your website, Facebook, Twitter, Github etc*
@@ -236,26 +232,24 @@ This is very similar in concept to iptables/ipf/firewall rule programming.*
     unblocker_rules.RULE2... (hash)
 *Add more rules to make a package!*
 
-## Start HScripting:
+## Start hscripting:
 * [Hola on Github](https://github.com/HolaAPI/HScript)
 * From [Unblocker settings page](http://client.hola.org/client_cgi/):
   * Click *'I am smart, I can write a new Unblocker script'*
   * Click *'View script...' on any of the site buttons*
-* Search the web for "HScript" or "Hola Script" + keywords
-  * e.g. Google: "Social sites HScript"
-* Copy an HScript whose functionality resembles your desired HScript, and modify it to your needs.
+* Search the web for "hscript" or "Hola script" + keywords
+  * e.g. Google: "Social sites hscript"
+* Copy an hscript whose functionality resembles your desired hscript, and modify it to your needs.
 
 ## Installing Hola Unblocker:
-[HOLA](http://hola.org) is available for Windows/Android/Chrome/Firefox
-
-*Linux/Mac/ChromeOS is supported by the Hola Unblocker browser extensions*
+[Hola](http://hola.org) is available for Windows/Android/Chrome/Firefox. Linux/Mac/ChromeOS is supported by the Hola Unblocker Chrome and Firefox browser extensions.
 
 ## Usage:
-* We recommend opening your own Github or similar repository for all the HScript/HScript Packages you create.
-* Share HScript and HScript package links with anyone by posting on your site, Facebook, Twitter, Github or anywhere you choose!
-* Add an HScript by clicking the link, this will redirect to Hola Unblocker setting page and request approval for adding to the list of Unblocked sites. If Hola is not installed or running, user is prompted.
+* We recommend opening your own Github or similar repository for all the hscript/hscript Packages you create.
+* Share hscript and hscript package links with anyone by posting on your site, Facebook, Twitter, Github or anywhere you choose!
+* Add an hscript by clicking the link, this will redirect to Hola Unblocker setting page and request approval for adding to the list of Unblocked sites. If Hola is not installed or running, user is prompted.
 * Try it out now by adding the [Hola Redirect Demo](http://hola.org/share?sid=ca7bb33efed0bc08) to your Hola Unblocker!
-* You can create, share and remove an HScript from the Hola Unblocker settings page by clicking the "I am smart" link.
+* You can create, share and remove an hscript from the Hola Unblocker settings page by clicking the "I am smart" link.
 
 ## Recommend changes and feedback:
-Fork us on Github and request any changes or improvements related to HScript or our documenation! You can always email us at *<a href="mailto:help@hola.org?Subject=HScript%20feedback%20from%20Github%20user">help at hola dot org</a>!*
+Fork us on Github and request any changes or improvements related to hscript or our documenation! You can always email us at *<a href="mailto:api@hola.org?Subject=HScript%20feedback%20from%20Github%20user">api@hola.org</a>!*
