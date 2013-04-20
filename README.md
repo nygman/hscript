@@ -181,10 +181,10 @@ hscript, or Hola script, by [Hola](http://hola.org) lets you:
     icon (string, optional)
 *Defines an image URL to represent the author, package, etc (not displaying yet*
 
-    unblocker_rules (hash, required)
+    unblocker_rules (map, required)
 *Array of rules for the sites you want to Unblock*
 
-    unblocker_rules.RULE1 (hash)
+    unblocker_rules.RULE1 (map)
 *replace RULE1 with the name of the rule. Add as many rules as you want.*
 
     unblocker_rules.RULE1.description (string, optional)
@@ -229,7 +229,7 @@ This is very similar in concept to iptables/ipf/firewall rule programming.*
     unblocker_rules.RULE1.cmds[].then (string, required)
 *Specify a direct route or through Hola peers: ""DIRECT"" | ""PROXY US"" | ""PROXY GB"" | ""PROXY ES"" *
 
-    unblocker_rules.RULE2... (hash)
+    unblocker_rules.RULE2... (map)
 *Add more rules to make a package!*
 
 ## Start hscripting:
