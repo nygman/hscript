@@ -15,17 +15,20 @@ A personal configurable VPN proxy
         "description": "Route requests to Maxmind from the UK",
         "link": "maxmind.com/en/locate_my_ip",
         "icon": "http://icongal.com/gallery/image/132178/uk_flag.png",
-        "cmds": [{"hosts": ["maxmind.com"],"then": "PROXY GB"}]},
+        "cmds": [{"hosts": ["maxmind.com"], "then": "PROXY GB"}]
+      },
       "maxmind_US": {
         "description": "Route requests to Maxmind from the US",
         "link": "maxmind.com/en/locate_my_ip",
         "icon": "http://icongal.com/gallery/image/229138/us_flag.png",
-        "cmds": [{"hosts": ["maxmind.com"],"then": "PROXY US"}]},
+        "cmds": [{"hosts": ["maxmind.com"], "then": "PROXY US"}]
+      },
       "maxmind_ES": {
         "description": "Route requests to Maxmind from the ES",
         "link": "maxmind.com/en/locate_my_ip",
         "icon": "http://icongal.com/gallery/image/8135/es_flag.png",
-        "cmds": [{"hosts": ["maxmind.com"],"then": "PROXY ES"}]}
+        "cmds": [{"hosts": ["maxmind.com"], "then": "PROXY ES"}]
+      }
     }
   }
 ```
@@ -45,8 +48,12 @@ A personal configurable VPN proxy
         "link": "facebook.com",
         "icon": "http://icongal.com/gallery/image/11148/facebook.png",
         "os": ["android"],
-        "cmds": [{"hosts": ["facebook.com","facebook.net","fbcdn.com","fbcdn.net","fbstatic-a.akamaihd.net",
-          "fbcdn-dragon-a.akamaihd.net"],"dst_dns": "true","then": "PROXY US"}]}
+        "cmds": [{
+          "hosts": ["facebook.com","facebook.net","fbcdn.com","fbcdn.net","fbstatic-a.akamaihd.net",
+            "fbcdn-dragon-a.akamaihd.net"],
+          "dst_dns": "true",
+          "then": "PROXY US"}]
+      }
     }
   }
 ```
