@@ -52,7 +52,8 @@ A personal configurable VPN proxy
           "hosts": ["facebook.com","facebook.net","fbcdn.com","fbcdn.net","fbstatic-a.akamaihd.net",
             "fbcdn-dragon-a.akamaihd.net"],
           "dst_dns": "true",
-          "then": "PROXY US"}]
+          "then": "PROXY US"
+        }]
       }
     }
   }
@@ -66,43 +67,63 @@ hscript, or Hola script, by [Hola](http://hola.org) lets you:
 * Easily share your hscript rules and hscript packages by posting a simple URL on your site, Facebook, Twitter, email, etc.
 
 ## API explained:
-* `name` optional, string - Name of the hscript RULE or package of RULES  
-* `author` optional, string - Author  
-* `description` optional, string - Description of hscript or hscript package with free text  
-* `site` optional, string - URL of your website, Facebook, Twitter, Github etc.  
-* `icon` optional, string - Image URL used to represent the author, package, etc. (not displaying yet)  
-* `unblocker\_rules` required, map - Array of rules for the sites you want to Unblock  
-* `unblocker\_rules.RULE1` map - Name of the rule. Replace RULE1 with the name of the rule. Add as many rules as you want  
-* `unblocker\_rules.RULE1.description` optional, string - Description of the rule  
-* `unblocker\_rules.RULE1.link` optional, string - URL of the site this rule Unblocks  
-* `unblocker\_rules.RULE1.icon` optional, string - Defines an image URL to represent the rule  
-* `unblocker\_rules.RULE1.os` optional, array of strings - Defines the OS support. When undefined, the default: ["windows","windows8","android"] is used. You may need to specify the host per OS when the site or app has different IPs from one another  
-* `unblocker\_rules.RULE1.def-ext` optional, array of strings - Defines the default extensions. When undefined, the default:["gif","png","jpg","mp3","js","css","mp4","wmv","flv","swf","json","mkv"] is used. def-ext is used by default by 'if' cmds when undefined in RULES1.cmds[].if[].ext  
-* `unblocker\_rules.RULE1.cmds[]` required, array - Array of commands to be executed for each URL the browser requests. The purpose of these rules is to make a decision 'if' a URL belongs to the RULE1 site, and if it does, should the URL be proxied or should the browser connect directly to the web server, for faster surfing. Each site rule matching starts with a fast path match using hash on the hosts, the host array contain all the hosts that produce URLs that have GeoIP checks in them. When a request arrives the domain of the request (host) is fast searched in the currently defined hosts hash (created from the hosts array), if a match is found the other parts of the command are processed (the 'if' statements) and a 'then' is fired, if no match is found the request bypasses all the rules and send via the default path (usually directly to the web server). The cmds are executed one after another. This is very similar in concept to iptables/ipf/firewall rule programming  
-* `unblocker\_rules.RULE1.cmds[].hosts[]` required, array - URL of host domain. Define as many hosts as you need  
-* `unblocker\_rules.RULE1.cmds[].if[]` optional, array - 'if' sections can accept rules from either of 3 sources host, url and ext.  
-* `unblocker\_rules.RULE1.cmds[].if[].host` optional, array of strings - Array of host to be included in the routing. e.g. "if": [{"host": "^subdomain.\*\\.domain\\.com$", "type": "=~", "then": "DIRECT"}]  
-* `unblocker\_rules.RULE1.cmds[].if[].url` optional, array of strings - Array of URLs to be included in the routing. e.g. "if": [{"url": "http://subdomain.domain.com/geoip\_check" <http://subdomain.domain.com/geoip_check>, "type": "!=", "then": "DIRECT"}]  
-* `unblocker\_rules.RULE1.cmds[].if[].ext` optional, array of strings - Array of extensions to be included in the routing. Define 'ext' commands when you need to modify the default extension list. e.g. "if": [{"ext": "aaa", "type": "==", "then": "PROXY US"}]  
-* `unblocker\_rules.RULE1.cmds[].if[].type` optional, string - The 'type' of the value in host/url/ext. equal matching:  ==, !=  (value is string); regex matching: =~, !~  (value is string converted into JS regex); array item matching: in, not_in (value is array)  
-* `unblocker\_rules.RULE1.cmds[].if[].then` optional, string - Define the route. Send requests directly from your browser: "DIRECT" ; Route through Hola peers: "PROXY US" (United States); "PROXY GB" (United Kingdom); "PROXY ES" (Spain). We'll be adding more countries soon, so <a href="mailto:help@hola.org?Subject=Request%20to%20add%20a%20new%20HScript%20region"> send us your region requests for new countries</a>  
-* `unblocker\_rules.RULE1.cmds[].if[].dst\_dns` optional, string - Destination DNS resolution. ONLY use when DNS resolution is needed and all traffic must go through the proxy, as this will have extremely slow page loads! This is for when you need to get around country/corporate/university Firewalls. Define as "true" to activate DNS resolution on the host.
-* `unblocker\_rules.RULE1.cmds[].then` required, string - Define the route. "DIRECT"; "PROXY US" ; "PROXY GB"; "PROXY ES"  
-* `unblocker\_rules.RULE2` map - Name of the next rule, more than one rule makes a package!  
+* `name` optional string: name of the hscript package  
+* `author` optional string: Author  
+* `description` optional string: Description of hscript package  
+* `site` optional string: URL of your website, Facebook, Twitter, Github etc.  
+* `icon` optional string: Image URL used to represent the author, package, etc. (not displaying yet)  
+* `unblocker_rules` required map: Routing rules for the sites you want to Unblock  
+* `unblocker_rules.RULE1` required map: Name of the rule.
+  Replace `RULE1` with the name of the rule. Add as many rules as you want  
+* `unblocker_rules.RULE1.description` optional string: Description of the rule  
+* `unblocker_rules.RULE1.link` optional string: URL of the site this rule Unblocks  
+* `unblocker_rules.RULE1.icon` optional string: Defines an image URL to represent the rule  
+* `unblocker_rules.RULE1.os` optional array of strings: Defines the OS support.
+  When undefined, the default: ["windows","windows8","android"] is used. You may need to specify the host per OS when the site or app has different IPs from one another  
+* `unblocker_rules.RULE1.def-ext` optional array of strings: Defines the default extensions.
+  When undefined, the default:["gif","png","jpg","mp3","js","css","mp4","wmv","flv","swf","json","mkv"] is used.
+  def-ext is used by default by 'if' cmds when undefined in RULES1.cmds[].if[].ext  
+* `unblocker_rules.RULE1.cmds[]` required array: commands to be executed for each URL the browser requests.
+  The purpose of these rules is to make a decision 'if' a URL belongs to the RULE1 site, and if it does, should the URL be proxied or should the browser connect directly to the web server, for faster surfing. Each site rule matching starts with a fast path match using hash on the hosts, the host array contain all the hosts that produce URLs that have GeoIP checks in them. When a request arrives the domain of the request (host) is fast searched in the currently defined hosts hash (created from the hosts array), if a match is found the other parts of the command are processed (the 'if' statements) and a 'then' is fired, if no match is found the request bypasses all the rules and send via the default path (usually directly to the web server). The cmds are executed one after another. This is very similar in concept to iptables/ipf/firewall rule programming  
+* `unblocker_rules.RULE1.cmds[].hosts[]` required array: URL of host domain.
+  Define as many hosts as you need  
+* `unblocker_rules.RULE1.cmds[].if[]` optional array: 'if' sections can accept rules from either of 3 sources host, url and ext.  
+* `unblocker_rules.RULE1.cmds[].if[].host` optional array of strings: hosts to be included in the routing.
+  e.g. "if": [{"host": "^subdomain.\*\\.domain\\.com$", "type": "=~", "then": "DIRECT"}]  
+* `unblocker_rules.RULE1.cmds[].if[].url` optional array of strings: URLs to be included in the routing.
+  e.g. "if": [{"url": "http://subdomain.domain.com/geoip_check" <http://subdomain.domain.com/geoip_check>, "type": "!=", "then": "DIRECT"}]  
+* `unblocker_rules.RULE1.cmds[].if[].ext` optional array of strings: file extensions to be included in the routing. Define 'ext' commands when you need to modify the default extension list. e.g. "if": [{"ext": "aaa", "type": "==", "then": "PROXY US"}]  
+* `unblocker_rules.RULE1.cmds[].if[].type` optional string: The 'type' of the value in host/url/ext.
+  equal matching:  ==, !=  (value is string); regex matching: =~, !~  (value is string converted into JS regex); array item matching: in, not_in (value is array)  
+* `unblocker_rules.RULE1.cmds[].if[].then` optional string: Select the route.
+  Send requests directly from your browser: "DIRECT" ; Route through Hola peers: "PROXY US" (United States); "PROXY GB" (United Kingdom); "PROXY ES" (Spain). We'll be adding more countries soon, so <a href="mailto:help@hola.org?Subject=Request%20to%20add%20a%20new%20HScript%20region"> send us your region requests for new countries</a>  
+* `unblocker_rules.RULE1.cmds[].if[].dst_dns` optional string: Destination DNS resolution.
+  ONLY use when DNS resolution is needed and all traffic must go through the proxy, as this will have extremely slow page loads! This is for when you need to get around country/corporate/university Firewalls. Define as "true" to activate DNS resolution on the host.
+* `unblocker_rules.RULE1.cmds[].then` required string: Select the route.
+  "DIRECT"; "PROXY US" ; "PROXY GB"; "PROXY ES"  
+* `unblocker_rules.RULE2` optinal map: Name of the next rule, more than one rule makes a package!  
 
 ### Note on performance
 Further explanation of 'hosts' and fast vs. slow matching: Example, say you have mysite.com which has 2 domains from which URLs are requested: www.mysite.com and img.mysite.com, and only the www subdomain has a GeoIP check on url "/authentication". There are basically 2 ways to go about defining the site rules:
 
 ```json
   {
-    "cmds": [{"hosts": ["mysite.com"],"if": [{"host": "img.mysite.com","type": "==","then": "DIRECT"},
-      {"url": ".*/authentication$","type": "!~","then": "DIRECT"}],"then": "PROXY GB"}]
+    "cmds": [{
+      "hosts": ["mysite.com"],
+      "if": [{"host": "img.mysite.com", "type": "==","then": "DIRECT"},
+        {"url": ".*/authentication$", "type": "!~", "then": "DIRECT"}],
+      "then": "PROXY GB"
+    }]
   }
 ```
 or
 ```json
   {
-    "cmds": [{"hosts": ["www.mysite.com"],"if": [{"url": ".*/authentication$","type": "!~","then": "DIRECT"}],"then": "PROXY GB"}]
+    "cmds": [{
+      "hosts": ["www.mysite.com"],
+      "if": [{"url": ".*/authentication$", "type": "!~", "then": "DIRECT"}],
+      "then": "PROXY GB"
+    }]
   }
 ```
 
