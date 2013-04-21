@@ -91,7 +91,7 @@ hscript, or Hola script, by [Hola](http://hola.org) lets you:
 * `unblocker_rules.RULE1.cmds[].if[].host` optional array of strings: hosts to be included in the routing.
   e.g. "if": [{"host": "^subdomain.\*\\.domain\\.com$", "type": "=~", "then": "DIRECT"}]  
 * `unblocker_rules.RULE1.cmds[].if[].url` optional array of strings: URLs to be included in the routing.
-  e.g. "if": [{"url": "http://subdomain.domain.com/geoip_check" <http://subdomain.domain.com/geoip_check>, "type": "!=", "then": "DIRECT"}]  
+  e.g. "if": [{"url": "http://subdomain.domain.com/geoip_check", "type": "!=", "then": "DIRECT"}]  
 * `unblocker_rules.RULE1.cmds[].if[].ext` optional array of strings: file extensions to be included in the routing. Define 'ext' commands when you need to modify the default extension list. e.g. "if": [{"ext": "aaa", "type": "==", "then": "PROXY US"}]  
 * `unblocker_rules.RULE1.cmds[].if[].type` optional string: The 'type' of the value in host/url/ext.
   equal matching:  ==, !=  (value is string); regex matching: =~, !~  (value is string converted into JS regex); array item matching: in, not_in (value is array)  
