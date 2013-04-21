@@ -6,7 +6,7 @@ A personal configurable VPN proxy
 ```json
   {
     "name": "Hola Redirect Demo",
-    "description": "Route requests to Maxmin through Hola peers around the world",
+    "description": "Route requests to Maxmind through Hola peers around the world",
     "author": "Hola",
     "site": "https://github.com/HolaAPI",
     "icon": "http://hola.org/img/logo.png",
