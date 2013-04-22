@@ -93,10 +93,11 @@ We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule d
 * `unblocker_rules.RULE1.description` *optional string*: **Description of the rule**   
 * `unblocker_rules.RULE1.link` *optional string*: **URL of the site this rule Unblocks**   
 * `unblocker_rules.RULE1.icon` *optional string*: **Image URL of the rule/site**  
-* `unblocker_rules.RULE1.os` *optional array of strings*: **Define the OS support**  
+* `unblocker_rules.RULE1.os` *optional array of strings*: **OS/device support**  
   Default when undefined: `["windows","windows8","android"]`.  
-  You may need to specify the host per OS when the site or app has different IPs from one another.   
-* `unblocker_rules.RULE1.def-ext` *optional array of strings*: **Define the default extensions**  
+  If the rule doesn't work for you on all OS/devices, then it's likely you will need to spcify the host per
+  OS/device as the site or app have different IPs from one OS/device to another.   
+* `unblocker_rules.RULE1.def-ext` *optional array of strings*: **Default extensions**  
   Default when undefined: `["gif","png","jpg","mp3","js","css","mp4","wmv","flv","swf","json","mkv"]`.  
   Note: `def-ext` is used by default by `if` cmds when undefined in `RULES1.cmds[].if[].ext`  
 * `unblocker_rules.RULE1.cmds[]` *required array*: **Commands to be executed for each URL the browser requests**  
@@ -110,7 +111,7 @@ We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule d
   send via the default path (usually directly to the web server).  
   The cmds are executed one after another. This is very similar in concept to iptables/ipf/firewall rule programming.  
 * `unblocker_rules.RULE1.cmds[].hosts[]` *required array*: **URL of host domain**  
-  Define as many hosts as you need.  
+  Specify as many hosts as you need.  
 * `unblocker_rules.RULE1.cmds[].if[]` *optional array*: **`if` can accept rules from either of 3 sources
   host, url and ext.**  
 * `unblocker_rules.RULE1.cmds[].if[].host` *optional array of strings*: **Hosts to be included in the routing**  
@@ -121,7 +122,7 @@ We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule d
   included in the routing**  
   Define `ext` commands when you need to modify the default extension list.  
   e.g. `"if": [{"ext": "aaa", "type": "==", "then": "PROXY US"}]`  
-* `unblocker_rules.RULE1.cmds[].if[].type` *optional string*: **`type` of value in host/url/ext**  
+* `unblocker_rules.RULE1.cmds[].if[].type` *optional string*: **Comparison method for `host`/`url`/`ext`**  
   * `==` equal matching of string value  
   * `!=` not equal matching of string value  
   * `=~` regex matching: `^foo\..*\.com$` will match foo.bar.com foo.b.a.r.com but not foo.com  
