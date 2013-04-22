@@ -81,19 +81,30 @@ hscript, or Hola script, by [Hola](http://hola.org) lets you:
 * `unblocker_rules.RULE1.os` *optional array of strings*: Defines the OS support.
   When undefined, the default: ["windows","windows8","android"] is used. You may need to specify the host per OS when the site or app has different IPs from one another  
 * `unblocker_rules.RULE1.def-ext` *optional array of strings*: Defines the default extensions.
-  When undefined, the default:["gif","png","jpg","mp3","js","css","mp4","wmv","flv","swf","json","mkv"] is used.
+  When undefined default is: `["gif","png","jpg","mp3","js","css","mp4","wmv","flv","swf","json","mkv"]`.
   def-ext is used by default by 'if' cmds when undefined in RULES1.cmds[].if[].ext  
 * `unblocker_rules.RULE1.cmds[]` *required array*: commands to be executed for each URL the browser requests.
-  The purpose of these rules is to make a decision 'if' a URL belongs to the RULE1 site, and if it does, should the URL be proxied or should the browser connect directly to the web server, for faster surfing. Each site rule matching starts with a fast path match using hash on the hosts, the host array contain all the hosts that produce URLs that have GeoIP checks in them. When a request arrives the domain of the request (host) is fast searched in the currently defined hosts hash (created from the hosts array), if a match is found the other parts of the command are processed (the 'if' statements) and a 'then' is fired, if no match is found the request bypasses all the rules and send via the default path (usually directly to the web server). The cmds are executed one after another. This is very similar in concept to iptables/ipf/firewall rule programming  
+  The purpose of these rules is to make a decision `if` a URL belongs to the `RULE1` site, and if it does,
+  should the URL be proxied or should the browser connect directly to the web server, for faster surfing.
+  Each site rule matching starts with a fast path match using hash on the hosts,
+  the host array contain all the hosts that produce URLs that have GeoIP checks in them.
+  When a request arrives the domain of the request (host) is fast searched in the currently defined hosts hash
+  (created from the hosts array), if a match is found the other parts of the command are processed
+  (the `if` statements) and a `then` is fired, if no match is found the request bypasses all the rules and
+  send via the default path (usually directly to the web server).
+  The cmds are executed one after another. This is very similar in concept to iptables/ipf/firewall rule
+  programming.
 * `unblocker_rules.RULE1.cmds[].hosts[]` *required array*: URL of host domain.
   Define as many hosts as you need  
-* `unblocker_rules.RULE1.cmds[].if[]` *optional array*: 'if' sections can accept rules from either of 3 sources host, url and ext.  
+* `unblocker_rules.RULE1.cmds[].if[]` *optional array*: `if` can accept rules from either of 3 sources host, url and ext.  
 * `unblocker_rules.RULE1.cmds[].if[].host` *optional array of strings*: hosts to be included in the routing.
-  e.g. "if": [{"host": "^subdomain.\*\\.domain\\.com$", "type": "=~", "then": "DIRECT"}]  
+  e.g. `"if": [{"host": "^subdomain.\*\\.domain\\.com$", "type": "=~", "then": "DIRECT"}]`  
 * `unblocker_rules.RULE1.cmds[].if[].url` *optional array of strings*: URLs to be included in the routing.
-  e.g. "if": [{"url": "http://subdomain.domain.com/geoip_check", "type": "!=", "then": "DIRECT"}]  
-* `unblocker_rules.RULE1.cmds[].if[].ext` *optional array of strings*: file extensions to be included in the routing. Define 'ext' commands when you need to modify the default extension list. e.g. "if": [{"ext": "aaa", "type": "==", "then": "PROXY US"}]  
-* `unblocker_rules.RULE1.cmds[].if[].type` *optional string*: The 'type' of the value in host/url/ext.
+  e.g. `"if": [{"url": "http://subdomain.domain.com/geoip_check", "type": "!=", "then": "DIRECT"}]`  
+* `unblocker_rules.RULE1.cmds[].if[].ext` *optional array of strings*: file extensions to be included in the routing.
+  Define `ext` commands when you need to modify the default extension list.
+  e.g. `"if": [{"ext": "aaa", "type": "==", "then": "PROXY US"}]`  
+* `unblocker_rules.RULE1.cmds[].if[].type` *optional string*: The `type` of the value in host/url/ext.
   equal matching:  ==, !=  (value is string); regex matching: =~, !~  (value is string converted into JS regex); array item matching: in, not_in (value is array)  
 * `unblocker_rules.RULE1.cmds[].if[].then` *optional string*: Select the route.
   Send requests directly from your browser: "DIRECT" ; Route through Hola peers: "PROXY US" (United States); "PROXY GB" (United Kingdom); "PROXY ES" (Spain). We'll be adding more countries soon, so <a href="mailto:api@hola.org?Subject=Request%20to%20add%20a%20new%20hscript%20region"> send us your region requests for new countries</a>  
