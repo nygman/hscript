@@ -1,5 +1,5 @@
 # hscript: Hola Unblocker Script
-A personal configurable VPN proxy
+Scripting language for configuring the Hola VPN proxy
 
 ## hscript package example:
 **[Hola Redirect Demo](http://hola.org/share?sid=ca7bb33efed0bc08):**
