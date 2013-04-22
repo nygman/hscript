@@ -109,13 +109,14 @@ hscript, or Hola script, by [Hola](http://hola.org) lets you:
   equal matching: `==`, `!=` (value is string)  
   regex matching: `=~`, `!~`  (value is string converted into JS regex)  
   array item matching: `in`, `not_in` (value is array)  
-* `unblocker_rules.RULE1.cmds[].if[].then` *optional string*: Select the route.
+* `unblocker_rules.RULE1.cmds[].if[].then` *optional string*: Select the route.  
   Send requests directly from your browser: "DIRECT" ; Route through Hola peers: "PROXY US" (United States); "PROXY GB" (United Kingdom); "PROXY ES" (Spain). We'll be adding more countries soon, so <a href="mailto:api@hola.org?Subject=Request%20to%20add%20a%20new%20hscript%20region"> send us your region requests for new countries</a>  
 * `unblocker_rules.RULE1.cmds[].if[].dst_dns` *optional string*: Destination DNS resolution.
   ONLY use when DNS resolution is needed and all traffic must go through the proxy, as this will have extremely slow page loads! This is for when you need to get around country/corporate/university Firewalls. Define as "true" to activate DNS resolution on the host.
-* `unblocker_rules.RULE1.cmds[].then` *required string*: Select the route.
+* `unblocker_rules.RULE1.cmds[].then` *required string*: Select the route.  
   "DIRECT"; "PROXY US" ; "PROXY GB"; "PROXY ES"  
-* `unblocker_rules.RULE2` *optional map*: Name of the next rule, more than one rule makes a package!  
+* `unblocker_rules.RULE2` *optional map*: Name of the next rule  
+  More than one rule makes a package!  
 
 ### Note on performance
 Further explanation of 'hosts' and fast vs. slow matching: Example, say you have mysite.com which has 2 domains from which URLs are requested: www.mysite.com and img.mysite.com, and only the www subdomain has a GeoIP check on url "/authentication". There are basically 2 ways to go about defining the site rules:
