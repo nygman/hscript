@@ -75,19 +75,24 @@ We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule d
 
 ## API explained:
 * `name` *optional string*: **name of the hscript package**  
-* `author` *optional string*: **Author**  
 * `description` *optional string*: **Description of hscript package**  
-* `site` *optional string*: **URL of your website**  
-  e.g.: `facebook.com/this.is.me`, `twitter.com/this.is.me`, `github.com/this.is.me` etc.  
-* `icon` *optional string*: **Image URL of the author**  
-  Image that represents the author, package, etc, such as `mysite.com/a-pic-of-myself.png`   
+* `author` *optional string*: **Author name**  
+  e.g.: `John Doe`  
+* `site` *optional string*: **Author's website URL**  
+  e.g.: `john-doe-blog.com`, `facebook.com/john.doe`, `twitter.com/john.doe`, `github.com/john.doe`.  
+* `icon` *optional string*: **Author's Image URL**  
+  Image that represents the author, package, etc: `john-doe-blog.com/john.png`   
   Currenly not displayed.  
 * `unblocker_rules` *required map*: **Routing rules for the sites to Unblock**  
-* `unblocker_rules.RULE1` *required map*: **Name the rule**  
-  Replace `RULE1` with the rule name, add as many rules as you want.  
+* `unblocker_rules.RULE1` *required map*: **Unblocker rule/site ID**  
+  Replace `RULE1` with the rule ID.
+  * `unblocker_rules.fb` for unblocking facebook.com  
+  * `unblocker_rules.wiki` for unblocking wikipedia.com  
+  * `unblocker_rules.goog-us` for unblocking google.com via the US  
+  One hscript package can have multiple rules/sites. User can enable each site independantly. 
 * `unblocker_rules.RULE1.description` *optional string*: **Description of the rule**   
 * `unblocker_rules.RULE1.link` *optional string*: **URL of the site this rule Unblocks**   
-* `unblocker_rules.RULE1.icon` *optional string*: **Image URL to represent the rule**  
+* `unblocker_rules.RULE1.icon` *optional string*: **Image URL of the rule/site**  
 * `unblocker_rules.RULE1.os` *optional array of strings*: **Define the OS support**  
   Default when undefined: `["windows","windows8","android"]`.  
   You may need to specify the host per OS when the site or app has different IPs from one another.   
