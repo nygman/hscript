@@ -71,19 +71,20 @@ hscript, or Hola script, by [Hola](http://hola.org) lets you:
 * `author` *optional string*: Author  
 * `description` *optional string*: Description of hscript package  
 * `site` *optional string*: URL of your website, Facebook, Twitter, Github etc.  
-* `icon` *optional string*: Image URL used to represent the author, package, etc. (not displaying yet)  
+* `icon` *optional string*: Image URL used to represent the author, package, etc.  
+  (not displaying yet)  
 * `unblocker_rules` *required map*: Routing rules for the sites you want to Unblock  
-* `unblocker_rules.RULE1` *required map*: Name of the rule.
-  Replace `RULE1` with the name of the rule. Add as many rules as you want  
+* `unblocker_rules.RULE1` *required map*: Name of the rule.  
+  Replace `RULE1` with the name of the rule. Add as many rules as you want.  
 * `unblocker_rules.RULE1.description` *optional string*: Description of the rule  
 * `unblocker_rules.RULE1.link` *optional string*: URL of the site this rule Unblocks  
 * `unblocker_rules.RULE1.icon` *optional string*: Defines an image URL to represent the rule  
-* `unblocker_rules.RULE1.os` *optional array of strings*: Defines the OS support.
+* `unblocker_rules.RULE1.os` *optional array of strings*: Defines the OS support.  
   When undefined, the default: ["windows","windows8","android"] is used. You may need to specify the host per OS when the site or app has different IPs from one another  
-* `unblocker_rules.RULE1.def-ext` *optional array of strings*: Defines the default extensions.
-  When undefined default is: `["gif","png","jpg","mp3","js","css","mp4","wmv","flv","swf","json","mkv"]`.
-  def-ext is used by default by 'if' cmds when undefined in RULES1.cmds[].if[].ext  
-* `unblocker_rules.RULE1.cmds[]` *required array*: commands to be executed for each URL the browser requests.
+* `unblocker_rules.RULE1.def-ext` *optional array of strings*: Defines the default extensions.  
+  When undefined default is: `["gif","png","jpg","mp3","js","css","mp4","wmv","flv","swf","json","mkv"]`.  
+  `def-ext` is used by default by `if` cmds when undefined in `RULES1.cmds[].if[].ext`  
+* `unblocker_rules.RULE1.cmds[]` *required array*: commands to be executed for each URL the browser requests.  
   The purpose of these rules is to make a decision `if` a URL belongs to the `RULE1` site, and if it does,
   should the URL be proxied or should the browser connect directly to the web server, for faster surfing.
   Each site rule matching starts with a fast path match using hash on the hosts,
@@ -94,18 +95,20 @@ hscript, or Hola script, by [Hola](http://hola.org) lets you:
   send via the default path (usually directly to the web server).
   The cmds are executed one after another. This is very similar in concept to iptables/ipf/firewall rule
   programming.
-* `unblocker_rules.RULE1.cmds[].hosts[]` *required array*: URL of host domain.
+* `unblocker_rules.RULE1.cmds[].hosts[]` *required array*: URL of host domain.  
   Define as many hosts as you need  
 * `unblocker_rules.RULE1.cmds[].if[]` *optional array*: `if` can accept rules from either of 3 sources host, url and ext.  
-* `unblocker_rules.RULE1.cmds[].if[].host` *optional array of strings*: hosts to be included in the routing.
+* `unblocker_rules.RULE1.cmds[].if[].host` *optional array of strings*: hosts to be included in the routing.  
   e.g. `"if": [{"host": "^subdomain.\*\\.domain\\.com$", "type": "=~", "then": "DIRECT"}]`  
-* `unblocker_rules.RULE1.cmds[].if[].url` *optional array of strings*: URLs to be included in the routing.
+* `unblocker_rules.RULE1.cmds[].if[].url` *optional array of strings*: URLs to be included in the routing.  
   e.g. `"if": [{"url": "http://subdomain.domain.com/geoip_check", "type": "!=", "then": "DIRECT"}]`  
-* `unblocker_rules.RULE1.cmds[].if[].ext` *optional array of strings*: file extensions to be included in the routing.
-  Define `ext` commands when you need to modify the default extension list.
+* `unblocker_rules.RULE1.cmds[].if[].ext` *optional array of strings*: file extensions to be included in the routing.  
+  Define `ext` commands when you need to modify the default extension list.  
   e.g. `"if": [{"ext": "aaa", "type": "==", "then": "PROXY US"}]`  
-* `unblocker_rules.RULE1.cmds[].if[].type` *optional string*: The `type` of the value in host/url/ext.
-  equal matching:  ==, !=  (value is string); regex matching: =~, !~  (value is string converted into JS regex); array item matching: in, not_in (value is array)  
+* `unblocker_rules.RULE1.cmds[].if[].type` *optional string*: The `type` of the value in host/url/ext.  
+  equal matching: `==`, `!=` (value is string)  
+  regex matching: `=~`, `!~`  (value is string converted into JS regex)  
+  array item matching: `in`, `not_in` (value is array)  
 * `unblocker_rules.RULE1.cmds[].if[].then` *optional string*: Select the route.
   Send requests directly from your browser: "DIRECT" ; Route through Hola peers: "PROXY US" (United States); "PROXY GB" (United Kingdom); "PROXY ES" (Spain). We'll be adding more countries soon, so <a href="mailto:api@hola.org?Subject=Request%20to%20add%20a%20new%20hscript%20region"> send us your region requests for new countries</a>  
 * `unblocker_rules.RULE1.cmds[].if[].dst_dns` *optional string*: Destination DNS resolution.
