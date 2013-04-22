@@ -128,7 +128,7 @@ We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule d
   * `!~` regex not matching.  
   * `in` array matching: `["foo.com", "bar.foo.com"]` will match bar.foo.com but not other.foo.com  
   * `not_in` array not matching.  
-* `unblocker_rules.RULE1.cmds[].if[].then` *optional string*: **Define the route**  
+* `unblocker_rules.RULE1.cmds[].if[].then` *optional string*: **Route directly or via VPN**  
   * `"DIRECT"` Dont proxy. Send requests directly from your browser.  
   * `"PROXY US"` Route through Hola peers in the United States  
   * `"PROXY GB"` Route through the United Kingdom  
@@ -136,18 +136,13 @@ We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule d
   We'll be adding more countries soon!
   <a href="mailto:api@hola.org?Subject=Request%20to%20add%20a%20new%20hscript%20region">
   Send us region requests for new countries</a>  
-* `unblocker_rules.RULE1.cmds[].if[].dst_dns` *optional string*: **Define destination DNS resolution**  
+* `unblocker_rules.RULE1.cmds[].if[].dst_dns` *optional string*: **Destination DNS resolution**  
   **ONLY** use when DNS resolution is needed and all traffic must go through the proxy, as this will
   have extremely slow page loads!  
   This is for when you need to get around country/corporate/university Firewalls.  
   Define as `"true"` to activate DNS resolution on the host.  
-* `unblocker_rules.RULE1.cmds[].then` *required string*: **Define the route**  
-  `"DIRECT"`  
-  `"PROXY US"`  
-  `"PROXY GB"`  
-  `"PROXY ES"`  
-* `unblocker_rules.RULE2` *optional map*: **Name of the next rule**  
-  More than one rule makes a package!  
+* `unblocker_rules.RULE1.cmds[].then` *required string*: **Route directly or via VPN**  
+  `"DIRECT"`, `"PROXY US"`, `"PROXY GB"`, `"PROXY ES"`  
 
 ### Note on performance
 Further explanation of `"host"` and fast vs. slow matching:  
