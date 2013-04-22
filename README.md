@@ -61,18 +61,23 @@ A personal configurable VPN proxy
 > This Facebook.com hscript instructs Hola Unblocker requests to route through PROXY US agents on the Hola network (e.g. allows Iranian residents to freely use Facebook on Android). Note that routing all traffic through the Hola proxies is required for such a case, but should not be used in cases where not needed since this significantly slows down the browsing.
 
 ## Intro:
-hscript, or Hola script, by [Hola](http://hola.org) lets you:
-* Configure routing rules for a set of URLs for use with the Hola Unblocker VPN Proxy
-* Create an hscript package by including several rules within one hscript
-* Easily share your hscript rules and hscript packages by posting a simple URL on your site, Facebook, Twitter, email, etc.
+hscript, or Hola script, by [Hola](http://hola.org) lets you:  
+* Configure routing rules for a set of URLs for use with the Hola Unblocker VPN Proxy  
+* Create an hscript package by including several rules within one hscript  
+* Easily share your hscript rules and hscript packages by posting a simple URL on your site, Facebook, Twitter, email, etc.  
+  
+Know **iptables**? You'll find writing hscript rules a breeze!  
+We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule development.  
 
 ## API explained:
-* `name` *optional string*: name of the hscript package  
-* `author` *optional string*: Author  
-* `description` *optional string*: Description of hscript package  
-* `site` *optional string*: URL of your website, Facebook, Twitter, Github etc.  
-* `icon` *optional string*: Image URL used to represent the author, package, etc.  
-  (not displaying yet)  
+* `name` *optional string*: **name of the hscript package**  
+* `author` *optional string*: **Author**  
+* `description` *optional string*: **Description of hscript package**  
+* `site` *optional string*: **URL of your website**  
+  e.g.: `facebook.com/this.is.me`, `twitter.com/this.is.me`, `github.com/this.is.me` etc.  
+* `icon` *optional string*: **Image URL of the author**
+  Image that represents the author, package, etc, such as `my-site.com/a-pic-of-myself.png`    
+  Currenly not displayed.  
 * `unblocker_rules` *required map*: Routing rules for the sites you want to Unblock  
 * `unblocker_rules.RULE1` *required map*: Name of the rule.  
   Replace `RULE1` with the name of the rule. Add as many rules as you want.  
