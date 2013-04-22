@@ -122,16 +122,17 @@ We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule d
   Define `ext` commands when you need to modify the default extension list.  
   e.g. `"if": [{"ext": "aaa", "type": "==", "then": "PROXY US"}]`  
 * `unblocker_rules.RULE1.cmds[].if[].type` *optional string*: **`type` of value in host/url/ext**  
-  equal matching: `==`, `!=` (value is string)  
-  regex matching: `=~`, `!~`  (value is string converted into JS regex)  
-  array item matching: `in`, `not_in` (value is array)  
+  * `==` equal matching of string value  
+  * `!=` not equal matching of string value  
+  * `=~` regex matching: `^foo\..*\.com$` will match foo.bar.com foo.b.a.r.com but not foo.com  
+  * `!~` regex not matching.  
+  * `in` array matching: `["foo.com", "bar.foo.com"]` will match bar.foo.com but not other.foo.com  
+  * `not_in` array not matching.  
 * `unblocker_rules.RULE1.cmds[].if[].then` *optional string*: **Define the route**  
-  Send requests directly from your browser:  
-  `"DIRECT"`  
-  Route through Hola peers:  
-  `"PROXY US"` (United States)  
-  `"PROXY GB"` (United Kingdom)  
-  `"PROXY ES"` (Spain)  
+  * `"DIRECT"` Dont proxy. Send requests directly from your browser.  
+  * `"PROXY US"` Route through Hola peers in the United States  
+  * `"PROXY GB"` Route through the United Kingdom  
+  * `"PROXY ES"` Route through Spain  
   We'll be adding more countries soon!
   <a href="mailto:api@hola.org?Subject=Request%20to%20add%20a%20new%20hscript%20region">
   Send us region requests for new countries</a>  
