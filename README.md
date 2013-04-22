@@ -32,7 +32,7 @@ A personal configurable VPN proxy
     }
   }
 ```
-> Access the website by routing ONLY the URLs that are authenticated through peers in that country
+> Access the website by routing ONLY the URLs that are authenticated through peers in that country  
 (and leave the rest of the URLs unrouted).
 
 **[Hola Facebook Demo - Android](http://hola.org/share?sid=0232ffff56b8ab0f):**
@@ -59,7 +59,7 @@ A personal configurable VPN proxy
     }
   }
 ```
-> This Facebook.com hscript instructs Hola Unblocker requests to route through PROXY US agents on the Hola network
+> This Facebook.com hscript instructs Hola Unblocker requests to route through PROXY US agents on the Hola network  
 (e.g. allows Iranian residents to freely use Facebook on Android). Note that routing all traffic through the Hola
 proxies is required for such a case, but should not be used in cases where not needed since this significantly
 slows down the browsing.
@@ -146,7 +146,7 @@ We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule d
 ### Note on performance
 Further explanation of `"host"` and fast vs. slow matching:  
 *Example*: Say you have mysite.com which has 2 domains from which URLs are requested:  
-www.mysite.com and img.mysite.com, and only the www subdomain has a GeoIP check on url `"/authentication"`.  
+`www.mysite.com` and `img.mysite.com`, and only the www subdomain has a GeoIP check on url `"/authentication"`.  
 There are basically 2 ways to go about defining the site rules:
 
 ```json
@@ -171,7 +171,7 @@ or
 ```
 
 Both methods work, but the second one is much faster because it improves browser responsiveness,  
-as the fast path matching of hosts is more accurate and we don't waste time on slow 'if' matchings.  
+as the fast path matching of hosts is more accurate and we don't waste time on slow `"if"` matchings.  
 
 ## Creating hscripts
 Creating new hscripts is easy!  
