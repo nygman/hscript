@@ -221,4 +221,4 @@ Email any other feedback to
 
 
 
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/1557a4f8ae97d86bc517e26b0af01352 "githalytics.com")](http://githalytics.com/holaAPI/hscript)
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/bb22ca5bd34cd07fba652c3a14c2eb07 "githalytics.com")](http://githalytics.com/holaAPI/hscript)
