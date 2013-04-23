@@ -218,3 +218,7 @@ We would love your help to make the Hola API and hscript even better!
 
 Email any other feedback to 
 <a href="mailto:api@hola.org?Subject=hscript%20feedback%20from%20Github%20user">api@hola.org</a>!  
+
+
+
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/1557a4f8ae97d86bc517e26b0af01352 "githalytics.com")](http://githalytics.com/holaAPI/hscript)
