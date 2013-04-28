@@ -2,14 +2,14 @@
 Scripting language for configuring the Hola VPN proxy
 
 ## hscript package example:
-**[Hola Redirect Demo](http://hola.org/share?sid=ca7bb33efed0bc08):**
+**[Redirect Demo](http://hola.org/share?sid=ca7bb33efed0bc08):**
 ```json
   {
-    "name": "Hola Redirect Demo",
+    "name": "Redirect Demo",
     "description": "Route requests to Maxmind's IP to Geographical location page through Hola peers around the world",
-    "author": "Hola",
-    "site": "https://github.com/HolaAPI",
-    "icon": "http://hola.org/img/logo.png",
+    "author": "John Doe",
+    "site": "http://john-doe-blog.com",
+    "icon": "http://john-doe-blog.com/img/logo.png",
     "unblocker_rules": {
       "maxmind_UK": {
         "description": "Route requests to Maxmind from the UK",
@@ -35,14 +35,14 @@ Scripting language for configuring the Hola VPN proxy
 > Access the website by routing ONLY the URLs that are authenticated through peers in that country  
 (and leave the rest of the URLs unrouted).
 
-**[Hola Facebook Demo - Android](http://hola.org/share?sid=0232ffff56b8ab0f):**
+**[Facebook Demo - Android](http://hola.org/share?sid=0232ffff56b8ab0f):**
 ```json
   {
-    "name": "Hola Facebook Demo",
+    "name": "Facebook Demo",
     "description": "Access Facebook from countries that block it or from behind a corporate Firewall. Android only",
-    "author": "Hola",
-    "site": "https://github.com/HolaAPI",
-    "icon": "http://hola.org/img/logo.png",
+    "author": "John Doe",
+    "site": "http://john-doe-blog.com",
+    "icon": "http://john-doe-blog.com/img/logo.png",
     "unblocker_rules": {
       "facebook": {
         "description": "Unblock Facebook app",
