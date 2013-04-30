@@ -1,0 +1,27 @@
+  {
+    "name": "Redirect Demo",
+    "description": "Route requests to Maxmind's IP to Geographical location page through Hola peers around the world",
+    "author": "John Doe",
+    "site": "http://john-doe-blog.com",
+    "icon": "http://john-doe-blog.com/img/logo.png",
+    "unblocker_rules": {
+      "maxmind_UK": {
+        "description": "Route requests to Maxmind from the UK",
+        "link": "maxmind.com/en/locate_my_ip",
+        "icon": "http://icongal.com/gallery/image/132178/uk_flag.png",
+        "cmds": [{"hosts": ["maxmind.com"], "then": "PROXY GB"}]
+      },
+      "maxmind_US": {
+        "description": "Route requests to Maxmind from the US",
+        "link": "maxmind.com/en/locate_my_ip",
+        "icon": "http://icongal.com/gallery/image/229138/us_flag.png",
+        "cmds": [{"hosts": ["maxmind.com"], "then": "PROXY US"}]
+      },
+      "maxmind_ES": {
+        "description": "Route requests to Maxmind from Spain",
+        "link": "maxmind.com/en/locate_my_ip",
+        "icon": "http://icongal.com/gallery/image/8135/es_flag.png",
+        "cmds": [{"hosts": ["maxmind.com"], "then": "PROXY ES"}]
+      }
+    }
+  }

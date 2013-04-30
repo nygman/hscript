@@ -1,0 +1,21 @@
+  {
+    "name": "Facebook Demo",
+    "description": "Access Facebook from countries that block it or from behind a corporate Firewall. Android only",
+    "author": "John Doe",
+    "site": "http://john-doe-blog.com",
+    "icon": "http://john-doe-blog.com/img/logo.png",
+    "unblocker_rules": {
+      "facebook": {
+        "description": "Unblock Facebook app",
+        "link": "facebook.com",
+        "icon": "http://icongal.com/gallery/image/11148/facebook.png",
+        "os": ["android"],
+        "cmds": [{
+          "hosts": ["facebook.com","facebook.net","fbcdn.com","fbcdn.net","fbstatic-a.akamaihd.net",
+            "fbcdn-dragon-a.akamaihd.net"],
+          "dst_dns": "true",
+          "then": "PROXY US"
+        }]
+      }
+    }
+  }
