@@ -134,6 +134,10 @@ We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule d
   * `"PROXY US"` Route through Hola peers in the United States  
   * `"PROXY GB"` Route through the United Kingdom  
   * `"PROXY ES"` Route through Spain  
+  * `"PROXY DE"` Route through Germany
+  * `"PROXY FR"` Route through France
+  * `"PROXY RU"` Route through Russia
+  * `"PROXY AU"` Route through Australia
   We'll be adding more countries soon!
   <a href="mailto:api@hola.org?Subject=Request%20to%20add%20a%20new%20hscript%20region">
   Send us region requests for new countries</a>  
@@ -143,7 +147,7 @@ We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule d
   This is for when you need to get around country/corporate/university Firewalls.  
   Define as `"true"` to activate DNS resolution on the host.  
 * `unblocker_rules.RULE1.cmds[].then` *required string*: **Route directly or via VPN**  
-  `"DIRECT"`, `"PROXY US"`, `"PROXY GB"`, `"PROXY ES"`  
+  `"DIRECT"`, `"PROXY US"`, `"PROXY GB"`, `"PROXY ES"`, `"PROXY DE"`, `"PROXY FR"`, `"PROXY RU"`, `"PROXY AU"`  
 
 ### Note on performance
 Further explanation of `"host"` and fast vs. slow matching:  
