@@ -186,7 +186,7 @@ Creating new hscripts is easy!
   * Search the web for "hscript" or "Hola script" + keywords  
     e.g. Google: "Social sites hscript"  
   * Copy an hscript whose functionality resembles your desired hscript, and modify it to your needs.  
-2. Fork us, or open your own Github for the hscripts you create.  
+2. Fork this Github repository, then create your own hscripts.  
 3. When you create an hscript, you receive a unique link to the hscript which you can post or share online,
    anywhere you choose!  
   * Try sending an hscript link now with the Hola Redirect Demo
@@ -196,8 +196,7 @@ Creating new hscripts is easy!
 [Hola](http://hola.org) is available for Windows/Android/Chrome/Firefox.  
 Linux/Mac/ChromeOS is supported by the Hola Unblocker Chrome and Firefox browser extensions.  
 
-## Receiving hscripts
-Sharing hscripts is even easier!  
+## Sharing hscripts
 
 1. Add an hscript to your Hola Unblocker by clicking the hscript link.  
 2. Clicking the link will direct your browser to the Hola Unblocker setting page,  
@@ -206,6 +205,14 @@ Sharing hscripts is even easier!
    [http://hola.org](http://hola.org).  
 3. Add an hscript now with the [Hola Redirect Demo](http://hola.org/share?sid=ca7bb33efed0bc08)!  
 4. Share and remove hscripts from the Hola Unblocker settings page at any time.  
+
+## Publicizing your hscripts
+
+Help the community by sharing your hscripts on Github!
+This will help other users develop their own rules based on your creations.
+
+If you don't already have a Github account, [open one](http://github.com) (it's free!) and fork our hscript project.
+You can use it as a base for your own rules, and then create your own hscripts projects which can be forked and shared.
 
 ## Recommend changes and feedback
 We would love your help to make the Hola API and hscript even better!  
