@@ -1,5 +1,11 @@
 # hscript: Hola Unblocker Script
-Scripting language for configuring the Hola VPN proxy
+Scripting language for configuring the [Hola Unblocker VPN proxy](http://hola.org) lets you:  
+* Configure routing rules for a set of URLs for use with the Hola Unblocker VPN Proxy  
+* Create an hscript package by including several rules within one hscript  
+* Easily share your hscript by posting a simple URL on your site, Facebook, Twitter, email, etc.  
+
+Know **iptables**? You'll find writing hscript rules a breeze!  
+We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule development.  
 
 ## hscript package example:
 **[Redirect Demo](http://hola.org/share?sid=ca7bb33efed0bc08):**
@@ -63,15 +69,6 @@ Scripting language for configuring the Hola VPN proxy
 (e.g. allows Iranian residents to freely use Facebook on Android). Note that routing all traffic through the Hola
 proxies is required for such a case, but should not be used in cases where not needed since this significantly
 slows down the browsing.
-
-## Intro:
-hscript, or Hola script, by [Hola](http://hola.org) lets you:  
-* Configure routing rules for a set of URLs for use with the Hola Unblocker VPN Proxy  
-* Create an hscript package by including several rules within one hscript  
-* Easily share your hscript by posting a simple URL on your site, Facebook, Twitter, email, etc.  
-
-Know **iptables**? You'll find writing hscript rules a breeze!  
-We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule development.  
 
 ## API explained:
 * `name` *optional string*: **name of the hscript package**  
