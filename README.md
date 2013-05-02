@@ -224,13 +224,6 @@ You can write rules for Android, but you cannot write rules ON Android (there is
 In the next few days we will change the Smart creation and editing section to display all of the hscripts within a package, regardless of the OS, so you can view Android hscripts on Windows.
 For now, create on your PC and share the rule with yourself to test on Android.
 
-## Help the community by becoming an hscript maintainer!
-**We want you!**
-We want our community members to become Hola ambassadors, who maintain and collect hscript packages for your countries, for both the hscripts you create and for other hscript developers.
-If you are interested in becoming an hscript maintainer, fork our Github and modify it to represent your country, or type of hscripts, etc.
-Here, you can create, copy and share your hscript rules with the world! We recommend saving each rule or rule package as a .json file, which can be easily shared by other people.
-Let us know if you want to be a maintainer, and we'll do our best to help out!
-
 ## Recommend changes and feedback
 We would love your help to make the Hola API and hscript even better!  
 
