@@ -67,8 +67,7 @@ We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule d
 ```
 > This Facebook.com hscript instructs Hola Unblocker requests to route through PROXY US agents on the Hola network  
 (e.g. allows Iranian residents to freely use Facebook on Android). Note that routing all traffic through the Hola
-proxies is required for such a case, but should not be used in cases where not needed since this significantly
-slows down the browsing.
+proxies is required for such a case, but should not be used in cases where not needed since this significantly slows down the browsing.
 
 ## API explained:
 * `name` *optional string*: **name of the hscript package**  
@@ -79,21 +78,21 @@ slows down the browsing.
   e.g.: `john-doe-blog.com`, `facebook.com/john.doe`, `twitter.com/john.doe`, `github.com/john.doe`.  
 * `icon` *optional string*: **Author's Image URL**  
   Image that represents the author, package, etc: `john-doe-blog.com/john.png`   
-  Currenly not displayed.  
+  Currently not displayed.  
 * `unblocker_rules` *required map*: **Routing rules for the sites to Unblock**  
 * `unblocker_rules.RULE1` *required map*: **Unblocker rule/site ID**  
   Replace `RULE1` with the rule ID.
   * `unblocker_rules.fb` for unblocking facebook.com  
   * `unblocker_rules.wiki` for unblocking wikipedia.com  
   * `unblocker_rules.goog-us` for unblocking google.com via the US  
-  One hscript package can have multiple rules/sites. User can enable each site independantly. 
+  One hscript package can have multiple rules/sites. User can enable each site independently. 
 * `unblocker_rules.RULE1.description` *optional string*: **Description of the rule**   
 * `unblocker_rules.RULE1.link` *optional string*: **URL of the site this rule Unblocks**   
 * `unblocker_rules.RULE1.icon` *optional string*: **Image URL of the rule/site**  
 * `unblocker_rules.RULE1.os` *optional array of strings*: **OS/device support**  
   Default when undefined: `["windows","windows8","android"]`.  
-  If the rule doesn't work for you on all OS/devices, then it's likely you will need to spcify the host per
-  OS/device as the site or app have different IPs from one OS/device to another.   
+  If the rule doesn't work for you on all OS/devices, then it's likely you will need to specify the host per
+  OS/device as the site or app has different IPs from one OS/device to another.   
 * `unblocker_rules.RULE1.def-ext` *optional array of strings*: **Default extensions**  
   Default when undefined: `["gif","png","jpg","mp3","js","css","mp4","wmv","flv","swf","json","mkv"]`.  
   Note: `def-ext` is used by default by `if` cmds when undefined in `RULES1.cmds[].if[].ext`  
@@ -127,7 +126,7 @@ slows down the browsing.
   * `in` array matching: `["foo.com", "bar.foo.com"]` will match bar.foo.com but not other.foo.com  
   * `not_in` array not matching.  
 * `unblocker_rules.RULE1.cmds[].if[].then` *optional string*: **Route directly or via VPN**  
-  * `"DIRECT"` Dont proxy. Send requests directly from your browser.  
+  * `"DIRECT"` Don't proxy. Send requests directly from your browser.  
   * `"PROXY US"` Route through Hola peers in the United States  
   * `"PROXY GB"` Route through the United Kingdom  
   * `"PROXY ES"` Route through Spain  
@@ -174,7 +173,7 @@ or
 ```
 
 Both methods work, but the second one is much faster because it improves browser responsiveness,  
-as the fast path matching of hosts is more accurate and we don't waste time on slow `"if"` matchings.  
+as the fast path matching of hosts is more accurate and we don't waste time on slow `"if"` matchings'.  
 
 ## Creating hscripts
 Creating new hscripts is easy!  
@@ -215,13 +214,29 @@ This will help other users develop their own rules based on your creations.
 If you don't already have a Github account, [open one](http://github.com) (it's free!) and fork our hscript project.
 You can use it as a base for your own rules, and then create your own hscripts projects which can be forked and shared.
 
+## Modifying and editing hscript rules
+We plan on adding better editing features in the coming weeks, including the ability to edit and modify rules easily.
+For now, you will need to create, test and re-create, and so on. Please delete old and non-functioning rules.
+If you have suggestions or examples on how you think the creation and editing should work, send your ideas to api@hola.org.
+
+## Android tips
+You can write rules for Android, but you cannot write rules ON Android (there is no proper development environment).
+In the next few days we will change the Smart creation and editing section to display all of the hscripts within a package, regardless of the OS, so you can view Android hscripts on Windows.
+For now, create on your PC and share the rule with yourself to test on Android.
+
+## Help the community by becoming an hscript maintainer!
+We want you!
+We want our community members to become Hola ambassadors, who maintain and collect hscript packages for your countries, for both the hscripts you create and for other hscript developers.
+If you are interested in becoming an hscript maintainer, fork our Github and modify it to represent your country, or type of hscripts, etc.
+Here, you can create, copy and share your hscript rules with the world! We recommend saving each rule or rule package as a .json file, which can be easily shared by other people.
+Let us know if you want to be a maintainer, and we'll do our best to help out!
+
 ## Recommend changes and feedback
 We would love your help to make the Hola API and hscript even better!  
 
 1. Fork us on Github!  
 2. Improve the documentation or the Hola API, etc.  
-3. We would love your help with creating howto documentation for Chrome debugger and
-   Firefox Firebug for building hscripts.  
+3. We would love your help with creating how to documentation for Chrome debugger and Firefox Firebug for building hscripts.  
 4. Send us a pull request and we'll update our Github page often!  
 
 Email any other feedback to 
