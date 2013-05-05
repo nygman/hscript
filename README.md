@@ -134,16 +134,19 @@ proxies is required for such a case, but should not be used in cases where not n
   * `"PROXY FR"` Route through France
   * `"PROXY RU"` Route through Russia
   * `"PROXY AU"` Route through Australia
+  * `"PROXY CA"` Route through Canada
+  * `"PROXY IT"` Route through Italy
+  * `"PROXY CL"` Route through Chile  
   We'll be adding more countries soon!
   <a href="mailto:api@hola.org?Subject=Request%20to%20add%20a%20new%20hscript%20region">
-  Send us region requests for new countries</a>  
+  Send a request to add a new country</a>  
 * `unblocker_rules.RULE1.cmds[].if[].dst_dns` *optional string*: **Destination DNS resolution**  
   **ONLY** use when DNS resolution is needed and all traffic must go through the proxy, as this will
   have extremely slow page loads!  
   This is for when you need to get around country/corporate/university Firewalls.  
   Define as `"true"` to activate DNS resolution on the host.  
 * `unblocker_rules.RULE1.cmds[].then` *required string*: **Route directly or via VPN**  
-  `"DIRECT"`, `"PROXY US"`, `"PROXY GB"`, `"PROXY ES"`, `"PROXY DE"`, `"PROXY FR"`, `"PROXY RU"`, `"PROXY AU"`  
+  `"DIRECT"`, `"PROXY US"`, `"PROXY GB"`, `"PROXY ES"`, `"PROXY DE"`, `"PROXY FR"`, `"PROXY RU"`, `"PROXY AU"`, `"PROXY CA"`, `"PROXY IT"`, `"PROXY CL"`  
 
 ### Note on performance
 Further explanation of `"host"` and fast vs. slow matching:  
