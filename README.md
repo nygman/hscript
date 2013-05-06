@@ -1,6 +1,6 @@
 # hscript: Hola Unblocker Script
-Scripting language for configuring the [Hola Unblocker VPN proxy](http://hola.org) lets you:  
-* Configure routing rules for a set of URLs for use with the Hola Unblocker VPN Proxy  
+A scripting language for configuring the [Hola Unblocker VPN](http://hola.org) that lets you:  
+* Unblock sites by creating a script for configuring routing rules (hscript) for use with the Hola Unblocker VPN  
 * Create an hscript package by including several rules within one hscript  
 * Easily share your hscript by posting a simple URL on your site, Facebook, Twitter, email, etc.  
 
@@ -126,18 +126,29 @@ proxies is required for such a case, but should not be used in cases where not n
   * `in` array matching: `["foo.com", "bar.foo.com"]` will match bar.foo.com but not other.foo.com  
   * `not_in` array not matching.  
 * `unblocker_rules.RULE1.cmds[].if[].then` *optional string*: **Route directly or via VPN**  
-  * `"DIRECT"` Don't proxy. Send requests directly from your browser.  
-  * `"PROXY US"` Route through Hola peers in the United States  
-  * `"PROXY GB"` Route through the United Kingdom  
-  * `"PROXY ES"` Route through Spain  
+  * `"DIRECT"` Don't proxy. Send requests directly from your browser to the web server.  
+  * `"PROXY US"` Route through the United States 
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
+  * `"PROXY GB"` Route through the United Kingdom
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
+  * `"PROXY ES"` Route through Spain
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
   * `"PROXY DE"` Route through Germany
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
   * `"PROXY FR"` Route through France
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
   * `"PROXY RU"` Route through Russia
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
   * `"PROXY AU"` Route through Australia
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
   * `"PROXY CA"` Route through Canada
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
   * `"PROXY IT"` Route through Italy
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
   * `"PROXY SE"` Route through Sweden
-  * `"PROXY CL"` Route through Chile  
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
+  * `"PROXY CL"` Route through Chile 
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
   We'll be adding more countries soon!
   <a href="mailto:api@hola.org?Subject=Request%20to%20add%20a%20new%20hscript%20region">
   Send a request to add a new country</a>  
@@ -217,6 +228,8 @@ This will help other users develop their own rules based on your creations.
 
 If you don't already have a Github account, [open one](http://github.com) (it's free!) and fork our hscript project.
 You can use it as a base for your own rules, and then create your own hscripts projects which can be forked and shared.
+
+Want to be a maintainer of a list of hscripts? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>
 
 ## Modifying and editing hscript rules
 We plan on adding better editing features in the coming weeks, including the ability to edit and modify rules easily.
