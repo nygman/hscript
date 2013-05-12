@@ -196,7 +196,7 @@ Creating new hscripts is easy!
 1. Get started:  
   * [Hola on Github](https://github.com/HolaAPI/HScript)  
   * From [Unblocker settings page](http://client.hola.org/client_cgi/),  
-    click: 'I am smart, I can write a new Unblocker script'  
+    click: 'create a new rule (power users)'  
     or click: 'View script...' on any of the site buttons  
   * Search the web for "hscript" or "Hola script" + keywords  
     e.g. Google: "Social sites hscript"  
@@ -209,7 +209,7 @@ Creating new hscripts is easy!
 
 ## Installing Hola Unblocker
 [Hola](http://hola.org) is available for Windows/Android/Chrome/Firefox.  
-Linux/Mac/ChromeOS is supported by the Hola Unblocker Chrome and Firefox browser extensions.  
+Linux/Mac/Chrome OS is supported by the Hola Unblocker Chrome and Firefox browser extensions.  
 
 ## Sharing hscripts
 
