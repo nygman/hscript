@@ -196,7 +196,7 @@ Creating new hscripts is easy!
 1. Get started:  
   * [Hola on Github](https://github.com/HolaAPI/HScript)  
   * From [Unblocker settings page](http://client.hola.org/client_cgi/),  
-    click: 'create a new rule (power users)'  
+    click: 'Create a new rule (power users)'  
     or click: 'View script...' on any of the site buttons  
   * Search the web for "hscript" or "Hola script" + keywords  
     e.g. Google: "Social sites hscript"  
