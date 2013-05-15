@@ -149,6 +149,10 @@ proxies is required for such a case, but should not be used in cases where not n
   (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
   * `"PROXY CL"` Route through Chile 
   (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
+  * `"PROXY NL"` Route through the Netherlands 
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
+  * `"PROXY IE"` Route through Ireland 
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
   We'll be adding more countries soon!
   <a href="mailto:api@hola.org?Subject=Request%20to%20add%20a%20new%20hscript%20region">
   Send a request to add a new country</a>  
@@ -158,7 +162,7 @@ proxies is required for such a case, but should not be used in cases where not n
   This is for when you need to get around country/corporate/university Firewalls.  
   Define as `"true"` to activate DNS resolution on the host.  
 * `unblocker_rules.RULE1.cmds[].then` *required string*: **Route directly or via VPN**  
-  `"DIRECT"`, `"PROXY US"`, `"PROXY GB"`, `"PROXY ES"`, `"PROXY DE"`, `"PROXY FR"`, `"PROXY RU"`, `"PROXY AU"`, `"PROXY CA"`, `"PROXY IT"`, `"PROXY SE"`, `"PROXY CL"`  
+  `"DIRECT"`, `"PROXY US"`, `"PROXY GB"`, `"PROXY ES"`, `"PROXY DE"`, `"PROXY FR"`, `"PROXY RU"`, `"PROXY AU"`, `"PROXY CA"`, `"PROXY IT"`, `"PROXY SE"`, `"PROXY CL"`, `"PROXY NL"`, `"PROXY IE"`  
 
 ### Note on performance
 Further explanation of `"host"` and fast vs. slow matching:  
