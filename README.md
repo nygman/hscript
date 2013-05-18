@@ -213,7 +213,7 @@ Creating new hscripts is easy!
 
 ## Installing Hola Unblocker
 [Hola](http://hola.org) is available for Windows/Android/Chrome/Firefox.  
-Linux/Mac/Chrome OS is supported by the Hola Unblocker Chrome and Firefox browser extensions.  
+Linux/Mac/Chrome OS is supported by the Hola Unblocker extension for Chrome and Firefox browsers.  
 
 ## Sharing hscripts
 
