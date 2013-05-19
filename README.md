@@ -198,22 +198,22 @@ as the fast path matching of hosts is more accurate and we don't waste time on s
 ## Creating hscripts
 Creating new hscripts is easy!  
 
-1. Get started with a good template with functionality similar to yours:  
+1. Get started by finding a script with functionality similar to what you need to use as a template:  
   * From existing hscripts: from the [Unblocker settings page](http://client.hola.org/client_cgi/),
     press 'Create a new rule (power users)' and then 'View script...' on any of the site buttons
     that are similar to what you want to accomplish
-  * or from similar scripts on the web: Search for "hscript" or "Hola script" + site name
+  * or from similar scripts on the web: Search for "hscript" + site name
   * or from one of the examples on this Github page
   * or start with a new rule template: From the [Unblocker settings page](http://client.hola.org/client_cgi/),
     press 'Create a new rule (power users)' then 'Create new script'
 2. Modify the template: Use the API reference on this page to modify the template to your needs
 3. Share your hscript:
-  * When you create an hscript, you receive a unique link to the hscript which you can post or share
-    online with other Hola users
-  * Create your own hscript page with all the scripts that you recommend for others to use
+  * When you create an hscript (or when you press 'share' on an hscript), you receive a unique link
+    to the hscript which you can post or share online with other Hola users
+  * Create your own hscript page with links to all the hScripts that you recommend for others to use
   * or Fork this Github repository, then create your own hscripts.
   * To see how this works, try sending an hscript link now with the Hola Redirect Demo
-    [http://hola.org/share?sid=ca7bb33efed0bc08](http://hola.org/share?sid=ca7bb33efed0bc08)!  
+    [http://hola.org/share?sid=ca7bb33efed0bc08](http://hola.org/share?sid=ca7bb33efed0bc08)  
 
 ## Installing Hola Unblocker
 [Hola](http://hola.org) is available for Windows/Android/Chrome/Firefox.  
@@ -221,13 +221,12 @@ Linux/Mac/Chrome OS is supported by the Hola Unblocker extension for Chrome and 
 
 ## Sharing hscripts
 
-1. Add an hscript to your Hola Unblocker by clicking the hscript link.  
-2. Clicking the link will direct your browser to the Hola Unblocker setting page,  
-   where you must approve adding the hscript to your list of Unblocked sites.  
-  * If Hola is not installed or running, you will get prompted to open Hola or install now at
-   [http://hola.org](http://hola.org).  
-3. Add an hscript now with the [Hola Redirect Demo](http://hola.org/share?sid=ca7bb33efed0bc08)!  
-4. Share and remove hscripts from the Hola Unblocker settings page at any time.  
+  * When you create an hscript (or when you press 'share' on an hscript), you receive a unique link
+    to the hscript which you can post or share online with other Hola users
+  * Create your own hscript page with links to all the hScripts that you recommend for others to use
+  * or Fork this Github repository, then create your own hscripts.
+  * To see how this works, try sending an hscript link now with the Hola Redirect Demo
+    [http://hola.org/share?sid=ca7bb33efed0bc08](http://hola.org/share?sid=ca7bb33efed0bc08)  
 
 ## Publicizing your hscripts
 
