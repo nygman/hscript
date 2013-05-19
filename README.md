@@ -217,7 +217,7 @@ Linux/Mac/Chrome OS is supported by the Hola Unblocker extension for Chrome and 
 How to share your hscripts:
   * When you create an hscript, you receive a unique link to the hscript which you can post or share
     online with other Hola users
-  * Create your own hScripts page with all the scripts that you recommend for others to use
+  * Create your own hscript page with all the scripts that you recommend for others to use
   * Fork this Github repository, then create your own hscripts.
   * To see how this works, try sending an hscript link now with the Hola Redirect Demo
     [http://hola.org/share?sid=ca7bb33efed0bc08](http://hola.org/share?sid=ca7bb33efed0bc08)!  
