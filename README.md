@@ -162,7 +162,8 @@ proxies is required for such a case, but should not be used in cases where not n
   This is for when you need to get around country/corporate/university Firewalls.  
   Define as `"true"` to activate DNS resolution on the host.  
 * `unblocker_rules.RULE1.cmds[].then` *required string*: **Route directly or via VPN**  
-  `"DIRECT"`, `"PROXY US"`, `"PROXY GB"`, `"PROXY ES"`, `"PROXY DE"`, `"PROXY FR"`, `"PROXY RU"`, `"PROXY AU"`, `"PROXY CA"`, `"PROXY IT"`, `"PROXY SE"`, `"PROXY CL"`, `"PROXY NL"`, `"PROXY IE"`  
+  `"DIRECT"`, `"PROXY US"`, `"PROXY GB"`, `"PROXY ES"`, `"PROXY DE"`, `"PROXY FR"`, `"PROXY RU"`,
+  `"PROXY AU"`, `"PROXY CA"`, `"PROXY IT"`, `"PROXY SE"`, `"PROXY CL"`, `"PROXY NL"`, `"PROXY IE"`  
 
 ### Note on performance
 Further explanation of `"host"` and fast vs. slow matching:  
@@ -197,33 +198,26 @@ as the fast path matching of hosts is more accurate and we don't waste time on s
 ## Creating hscripts
 Creating new hscripts is easy!  
 
-1. Get started:  
-  * [Hola on Github](https://github.com/HolaAPI/HScript)  
-  * From [Unblocker settings page](http://client.hola.org/client_cgi/),  
-    click: 'Create a new rule (power users)'  
-    or click: 'View script...' on any of the site buttons  
-  * Search the web for "hscript" or "Hola script" + keywords  
-    e.g. Google: "Social sites hscript"  
-  * Copy an hscript whose functionality resembles your desired hscript, and modify it to your needs.  
-2. Fork this Github repository, then create your own hscripts.  
-3. When you create an hscript, you receive a unique link to the hscript which you can post or share online,
-   anywhere you choose!  
-  * Try sending an hscript link now with the Hola Redirect Demo
+1. Get started with a good template with functionality similar to yours:  
+  * From existing hscripts: from the [Unblocker settings page](http://client.hola.org/client_cgi/),
+    press 'Create a new rule (power users)' and then 'View script...' on any of the site buttons
+    that are similar to what you want to accomplish
+  * From similar scripts on the web: Search for "hscript" or "Hola script" + site name
+  * From one of the examples on this Github page
+  * Start with a new rule template: From the [Unblocker settings page](http://client.hola.org/client_cgi/),
+    press 'Create a new rule (power users)' then 'Create new script'
+2. Modify the template: Use the API reference on this page to modify the template to your needs
+3. Share your hscript:
+  * When you create an hscript, you receive a unique link to the hscript which you can post or share
+    online with other Hola users
+  * Create your own hScripts page with all the scripts that you recommend for others to use
+  * or fork this Github repository, then create your own hscripts.
+  * To see how this works, try sending an hscript link now with the Hola Redirect Demo
     [http://hola.org/share?sid=ca7bb33efed0bc08](http://hola.org/share?sid=ca7bb33efed0bc08)!  
 
 ## Installing Hola Unblocker
 [Hola](http://hola.org) is available for Windows/Android/Chrome/Firefox.  
 Linux/Mac/Chrome OS is supported by the Hola Unblocker extension for Chrome and Firefox browsers.  
-
-## Sharing hscripts
-
-1. Add an hscript to your Hola Unblocker by clicking the hscript link.  
-2. Clicking the link will direct your browser to the Hola Unblocker setting page,  
-   where you must approve adding the hscript to your list of Unblocked sites.  
-  * If Hola is not installed or running, you will get prompted to open Hola or install now at
-   [http://hola.org](http://hola.org).  
-3. Add an hscript now with the [Hola Redirect Demo](http://hola.org/share?sid=ca7bb33efed0bc08)!  
-4. Share and remove hscripts from the Hola Unblocker settings page at any time.  
 
 ## Publicizing your hscripts
 
