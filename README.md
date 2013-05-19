@@ -207,6 +207,13 @@ Creating new hscripts is easy!
   * or start with a new rule template: From the [Unblocker settings page](http://client.hola.org/client_cgi/),
     press 'Create a new rule (power users)' then 'Create new script'
 2. Modify the template: Use the API reference on this page to modify the template to your needs
+3. Share your hscript:
+  * When you create an hscript, you receive a unique link to the hscript which you can post or share
+    online with other Hola users
+  * Create your own hscript page with all the scripts that you recommend for others to use
+  * or Fork this Github repository, then create your own hscripts.
+  * To see how this works, try sending an hscript link now with the Hola Redirect Demo
+    [http://hola.org/share?sid=ca7bb33efed0bc08](http://hola.org/share?sid=ca7bb33efed0bc08)!  
 
 ## Installing Hola Unblocker
 [Hola](http://hola.org) is available for Windows/Android/Chrome/Firefox.  
@@ -214,13 +221,13 @@ Linux/Mac/Chrome OS is supported by the Hola Unblocker extension for Chrome and 
 
 ## Sharing hscripts
 
-How to share your hscripts:
-  * When you create an hscript, you receive a unique link to the hscript which you can post or share
-    online with other Hola users
-  * Create your own hscript page with all the scripts that you recommend for others to use
-  * Fork this Github repository, then create your own hscripts.
-  * To see how this works, try sending an hscript link now with the Hola Redirect Demo
-    [http://hola.org/share?sid=ca7bb33efed0bc08](http://hola.org/share?sid=ca7bb33efed0bc08)!  
+1. Add an hscript to your Hola Unblocker by clicking the hscript link.  
+2. Clicking the link will direct your browser to the Hola Unblocker setting page,  
+   where you must approve adding the hscript to your list of Unblocked sites.  
+  * If Hola is not installed or running, you will get prompted to open Hola or install now at
+   [http://hola.org](http://hola.org).  
+3. Add an hscript now with the [Hola Redirect Demo](http://hola.org/share?sid=ca7bb33efed0bc08)!  
+4. Share and remove hscripts from the Hola Unblocker settings page at any time.  
 
 ## Publicizing your hscripts
 
