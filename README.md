@@ -210,7 +210,7 @@ Creating new hscripts is easy!
 3. Share your hscript:
   * When you create an hscript (or when you press 'share' on an hscript), you receive a unique link
     to the hscript which you can post or share online with other Hola users
-  * Create your own hscript page with links to all the hScripts that you recommend for others to use
+  * Create your own hscript page with links to all the hsripts that you recommend for others to use
   * or Fork this Github repository, then create your own hscripts.
   * To see how this works, try sending an hscript link now with the Hola Redirect Demo
     [http://hola.org/share?sid=ca7bb33efed0bc08](http://hola.org/share?sid=ca7bb33efed0bc08)  
@@ -223,7 +223,7 @@ Linux/Mac/Chrome OS is supported by the Hola Unblocker extension for Chrome and 
 
   * When you create an hscript (or when you press 'share' on an hscript), you receive a unique link
     to the hscript which you can post or share online with other Hola users
-  * Create your own hscript page with links to all the hScripts that you recommend for others to use
+  * Create your own hscript page with links to all the hscripts that you recommend for others to use
   * or Fork this Github repository, then create your own hscripts.
   * To see how this works, try sending an hscript link now with the Hola Redirect Demo
     [http://hola.org/share?sid=ca7bb33efed0bc08](http://hola.org/share?sid=ca7bb33efed0bc08)  
