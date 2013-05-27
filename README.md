@@ -227,6 +227,11 @@ Linux/Mac/Chrome OS is supported by the Hola Unblocker extension for Chrome and 
   * or Fork this Github repository, then create your own hscripts.
   * To see how this works, try sending an hscript link now with the Hola Redirect Demo
     [http://hola.org/unblocker?hscript=ca7bb33efed0bc08](http://hola.org/unblocker?hscript=ca7bb33efed0bc08)  
+  * Sharing link syntax:
+    http://hola.org/unblocker?hscript=sid&enable=site1+site2&sites=sites1+sites2
+    * hscript: the script id of the script you want to share
+    * enable: optional, list of rules to enable by default when a user imports a script
+    * sites: optional, list of rules to make the link easier to find by search engines
 
 ## Publicizing your hscripts
 
