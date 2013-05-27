@@ -8,7 +8,7 @@ Know **iptables**? You'll find writing hscript rules a breeze!
 We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule development.  
 
 ## hscript package example:
-**[Redirect Demo](http://hola.org/share?sid=ca7bb33efed0bc08):**
+**[Redirect Demo](http://hola.org/unblocker?hscript=ca7bb33efed0bc08):**
 ```json
   {
     "name": "Redirect Demo",
@@ -226,7 +226,7 @@ Linux/Mac/Chrome OS is supported by the Hola Unblocker extension for Chrome and 
   * Create your own hscript page with links to all the hscripts that you recommend for others to use
   * or Fork this Github repository, then create your own hscripts.
   * To see how this works, try sending an hscript link now with the Hola Redirect Demo
-    [http://hola.org/share?sid=ca7bb33efed0bc08](http://hola.org/share?sid=ca7bb33efed0bc08)  
+    [http://hola.org/unblocker?hscript=ca7bb33efed0bc08](http://hola.org/unblocker?hscript=ca7bb33efed0bc08)  
 
 ## Publicizing your hscripts
 
