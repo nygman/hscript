@@ -213,7 +213,7 @@ Creating new hscripts is easy!
   * Create your own hscript page with links to all the hsripts that you recommend for others to use
   * or Fork this Github repository, then create your own hscripts.
   * To see how this works, try sending an hscript link now with the Hola Redirect Demo
-    [http://hola.org/share?sid=ca7bb33efed0bc08](http://hola.org/share?sid=ca7bb33efed0bc08)  
+    [http://hola.org/unblocker?hscript=ca7bb33efed0bc08](http://hola.org/unblocker?hscript=ca7bb33efed0bc08)  
 
 ## Installing Hola Unblocker
 [Hola](http://hola.org) is available for Windows/Android/Chrome/Firefox.  
