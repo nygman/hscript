@@ -90,7 +90,7 @@ proxies is required for such a case, but should not be used in cases where not n
 * `unblocker_rules.RULE1.link` *optional string*: **URL of the site this rule Unblocks**   
 * `unblocker_rules.RULE1.icon` *optional string*: **Image URL of the rule/site**  
 * `unblocker_rules.RULE1.os` *optional array of strings*: **OS/device support**  
-  Default when undefined: `["windows","windows8","android"]`.  
+  Default when undefined: `["windows","android"]`.  
   If the rule doesn't work for you on all OS/devices, then it's likely you will need to specify the host per
   OS/device as the site or app has different IPs from one OS/device to another.   
 * `unblocker_rules.RULE1.def-ext` *optional array of strings*: **Default extensions**  
