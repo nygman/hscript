@@ -230,8 +230,8 @@ Linux/Mac/Chrome OS is supported by the Hola Unblocker extension for Chrome and 
   * Sharing link syntax:
     http://hola.org/unblocker?hscript=sid&enable=site1+site2&sites=sites1+sites2
     * hscript: the script id of the script you want to share
-    * enable: optional, list of rules to enable by default when a user imports a script
-    * sites: optional, list of rules to make the link easier to find by search engines
+    * enable: optional, list of rules that will be enabled by default upon script import
+    * sites: optional, list of domains that the script unblocks
 
 ## Publicizing your hscripts
 
