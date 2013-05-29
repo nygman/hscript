@@ -165,6 +165,17 @@ proxies is required for such a case, but should not be used in cases where not n
   `"DIRECT"`, `"PROXY US"`, `"PROXY GB"`, `"PROXY ES"`, `"PROXY DE"`, `"PROXY FR"`, `"PROXY RU"`,
   `"PROXY AU"`, `"PROXY CA"`, `"PROXY IT"`, `"PROXY SE"`, `"PROXY CL"`, `"PROXY NL"`, `"PROXY IE"`  
 
+### Script debug
+- This feature is only available for the Hola Windows stand alone installation. It will not work for browser extensions (Chrome & Firefox).
+- To enable debug mode enter advanced mode by clicking the
+  "Developer: create new rules" link.
+- To disable debug mode, go back to normal view by clicking the "Too complicated for me!" link
+- In advanced mode, Hola will add 'X-Hola-Unblocker-Debug' response header to any http request (you can view all network traffic using Chrome Developer Tools and selecting the network tab).
+- X-Hola-Unblocker-Debug stynax:
+  - "rule xxx js direct" the request was captured by rule xxx but the traffic was sent directly without using a vpn proxy
+  - "rule xxx country us cpnnn" the request was captured by rule xxx and
+    the traffic was sent to a US proxy
+
 ### Note on performance
 Further explanation of `"host"` and fast vs. slow matching:  
 *Example*: Say you have mysite.com which has 2 domains from which URLs are requested:  
