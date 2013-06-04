@@ -153,6 +153,12 @@ proxies is required for such a case, but should not be used in cases where not n
   (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
   * `"PROXY IE"` Route through Ireland 
   (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
+  * `"PROXY DK"` Route through Denmark 
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
+  * `"PROXY IN"` Route through India 
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
+  * `"PROXY EG"` Route through Egypt 
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>)  
   We'll be adding more countries soon!
   <a href="mailto:api@hola.org?Subject=Request%20to%20add%20a%20new%20hscript%20region">
   Send a request to add a new country</a>  
@@ -163,7 +169,8 @@ proxies is required for such a case, but should not be used in cases where not n
   Define as `"true"` to activate DNS resolution on the host.  
 * `unblocker_rules.RULE1.cmds[].then` *required string*: **Route directly or via VPN**  
   `"DIRECT"`, `"PROXY US"`, `"PROXY GB"`, `"PROXY ES"`, `"PROXY DE"`, `"PROXY FR"`, `"PROXY RU"`,
-  `"PROXY AU"`, `"PROXY CA"`, `"PROXY IT"`, `"PROXY SE"`, `"PROXY CL"`, `"PROXY NL"`, `"PROXY IE"`  
+  `"PROXY AU"`, `"PROXY CA"`, `"PROXY IT"`, `"PROXY SE"`, `"PROXY CL"`, `"PROXY NL"`, `"PROXY IE"`,
+  `"PROXY DK"`, `"PROXY IN"`, `"PROXY EG"`  
 
 ### Script debug
 - This feature is only available for the Hola Windows stand alone installation. It will not work for browser extensions (Chrome & Firefox).
@@ -236,13 +243,13 @@ Linux/Mac/Chrome OS is supported by the Hola Unblocker extension for Chrome and 
     to the hscript which you can post or share online with other Hola users
   * Create your own hscript page with links to all the hscripts that you recommend for others to use
   * or Fork this Github repository, then create your own hscripts.
-  * To see how this works, try sending an hscript link now with the Hola Redirect Demo
-    [http://hola.org/unblocker?hscript=ca7bb33efed0bc08](http://hola.org/unblocker?hscript=ca7bb33efed0bc08)  
+  * To see how this works, try sending an hscript link now with the 
+    [http://hola.org/unblocker?hscript=0ca1bf7f4747e408&sites=maxmind_US+maxmind_GB+maxmind_ES] Redirect Demo  
   * Sharing link syntax:
     http://hola.org/unblocker?hscript=sid&enable=site1+site2&sites=sites1+sites2
-    * hscript: the script id of the script you want to share
-    * enable: optional, list of rules that will be enabled by default upon script import
-    * sites: optional, list of domains that the script unblocks
+    * hscript: the hscript id of the hscript you want to share
+    * enable: optional, list of rules that will be enabled by default upon hscript import
+    * sites: optional, list of domains that the hscript Unblocks
 
 ## Publicizing your hscripts
 
@@ -261,8 +268,8 @@ If you have suggestions or examples on how you think the creation and editing sh
 
 ## Android tips
 You can write rules for Android, but you cannot write rules ON Android (there is no proper development environment).
-In the next few days we will change the Smart creation and editing section to display all of the hscripts within a package, regardless of the OS, so you can view Android hscripts on Windows.
-For now, create on your PC and share the rule with yourself to test on Android.
+Create Android hscripts on your PC and share the link with yourself to test on Android. When you modify the hscript,
+your Android client will automatically receive the updated hscript.
 
 ## Recommend changes and feedback
 We would love your help to make the Hola API and hscript even better!  
