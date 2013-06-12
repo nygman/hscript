@@ -89,6 +89,14 @@ proxies is required for such a case, but should not be used in cases where not n
 * `unblocker_rules.RULE1.description` *optional string*: **Description of the rule**   
 * `unblocker_rules.RULE1.link` *optional string*: **URL of the site this rule Unblocks**   
 * `unblocker_rules.RULE1.icon` *optional string*: **Image URL of the rule/site**  
+* `unblocker_rules.RULE1.root_url` *optional array of strings*:
+  * An array of urls that identify the root site.
+  * Each url can be an exact site or a url pattern matching.
+  * Examples:
+  * http://www.site.com (match www.site.com and www.site.com/xxx)
+  * \*://\*.site.com/** (match a.site.com/xxx but not a.b.site.com/xxx)
+  * \*://\*\*.site.com/** (match a.site.com/xxx and a.b.site.com/xxx)
+  * \*\*.site.com (same as \*://\*\*.site.com/**)
 * `unblocker_rules.RULE1.os` *optional array of strings*: **OS/device support**  
   Default when undefined: `["windows","android"]`.  
   If the rule doesn't work for you on all OS/devices, then it's likely you will need to specify the host per
