@@ -296,6 +296,7 @@ We would love your help to make the Hola API and hscript even better!
 Email any other feedback to 
 <a href="mailto:api@hola.org?Subject=hscript%20feedback%20from%20Github%20user">api@hola.org</a>!  
 
-
+## Become a Beta tester
+[Join the Hola Beta Tester community](https://plus.google.com/u/0/communities/104757099977208104685) to get access to pre-release versions and new API features.
 
 [![githalytics.com alpha](https://cruel-carlota.pagodabox.com/bb22ca5bd34cd07fba652c3a14c2eb07 "githalytics.com")](http://githalytics.com/holaAPI/hscript)
