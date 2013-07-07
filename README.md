@@ -173,6 +173,12 @@ proxies is required for such a case, but should not be used in cases where not n
   (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Brazil%20Maintainer">Email us</a>)  
   * `"PROXY TR"` Route through Turkey 
   (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Turkey%20Maintainer">Email us</a>)  
+  * `"PROXY PL"` Route through Poland 
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Poland%20Maintainer">Email us</a>)  
+  * `"PROXY SG"` Route through Singapore 
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Singapore%20Maintainer">Email us</a>)  
+  * `"PROXY HK"` Route through Hong Kong 
+  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Hong%20Kong%20Maintainer">Email us</a>)  
   We'll be adding more countries soon!
   <a href="mailto:api@hola.org?Subject=Request%20to%20add%20a%20new%20hscript%20region">
   Send a request to add a new country</a>  
@@ -245,7 +251,7 @@ Creating new hscripts is easy!
   * Create your own hscript page with links to all the hsripts that you recommend for others to use
   * or Fork this Github repository, then create your own hscripts.
   * To see how this works, try sending an hscript link now with the Hola Redirect Demo
-    [http://hola.org/unblocker?hscript=ca7bb33efed0bc08](http://hola.org/unblocker?hscript=ca7bb33efed0bc08)  
+    [http://hola.org/unblocker?hscript=0ca1bf7f4747e408&sites=maxmind_US+maxmind_GB+maxmind_ES](http://hola.org/unblocker?hscript=0ca1bf7f4747e408&sites=maxmind_US+maxmind_GB+maxmind_ES)  
 
 ## Installing Hola Unblocker
 [Hola](http://hola.org) is available for Windows/Android/Chrome/Firefox.  
