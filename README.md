@@ -92,11 +92,11 @@ proxies is required for such a case, but should not be used in cases where not n
 * `unblocker_rules.RULE1.root_url` *optional array of strings*:
   * An array of urls that identify the root site.
   * Each url can be an exact site or a url pattern matching.
-  * Examples:
-  * http://www.site.com (match www.site.com and www.site.com/xxx)
-  * \*://\*.site.com/** (match a.site.com/xxx but not a.b.site.com/xxx)
-  * \*://\*\*.site.com/** (match a.site.com/xxx and a.b.site.com/xxx)
-  * \*\*.site.com (same as \*://\*\*.site.com/**)
+  * Examples:  
+  * http://www.site.com (match www.site.com and www.site.com/xxx)  
+  * \*://\*.site.com/** (match a.site.com/xxx but not a.b.site.com/xxx)  
+  * \*://\*\*.site.com/** (match a.site.com/xxx and a.b.site.com/xxx)  
+  * \*\*.site.com (same as \*://\*\*.site.com/**)  
 * `unblocker_rules.RULE1.os` *optional array of strings*: **OS/device support**  
   Default when undefined: `["windows","android"]`.  
   If the rule doesn't work for you on all OS/devices, then it's likely you will need to specify the host per
@@ -104,10 +104,11 @@ proxies is required for such a case, but should not be used in cases where not n
 * `unblocker_rules.RULE1.apk` *optional map*: **Add apk download feature for Android app (Android OS only)**
 * `unblocker_rules.RULE1.apk.pkg` *required string*: **Add pkg name of Android app**  
   * To find the pkg name of the app, go to http://play.google.com and search for application.  
-  * From the URL address, copy the pkg id, e.g. com.viber.voip
+  * From the URL address, copy the pkg id, e.g. com.viber.voip  
 * `unblocker_rules.RULE1.apk.url` *optional string*: **Add url location of Android app**  
-	* e.g. "https://www.cubby.com/pl/Viber_3.0.2.5.apk/_efd19a1656ae4865886d0e738073de02"
-  * Note: Android 2.3 cannot use HTTPS links, only HTTP!
+	* e.g. "https://www.cubby.com/pl/Viber_3.0.2.5.apk/_efd19a1656ae4865886d0e738073de02"  
+  * If no apk.url is defined, Hola will try to automatically download pkg apk from Play  
+  Note: Android 2.3 cannot use HTTPS links, only HTTP!  
 * `unblocker_rules.RULE1.def-ext` *optional array of strings*: **Default extensions**  
   Default when undefined: `["gif","png","jpg","mp3","js","css","mp4","wmv","flv","swf","json","mkv"]`.  
   Note: `def-ext` is used by default by `if` cmds when undefined in `RULES1.cmds[].if[].ext`  
