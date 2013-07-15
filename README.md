@@ -101,6 +101,13 @@ proxies is required for such a case, but should not be used in cases where not n
   Default when undefined: `["windows","android"]`.  
   If the rule doesn't work for you on all OS/devices, then it's likely you will need to specify the host per
   OS/device as the site or app has different IPs from one OS/device to another.   
+* `unblocker_rules.RULE1.apk` *optional map*: **Add apk download feature for Android app (Android OS only)**
+* `unblocker_rules.RULE1.apk.pkg` *required string*: **Add pkg name of Android app**  
+  * To find the pkg name of the app, go to http://play.google.com and search for application.  
+  * From the URL address, copy the pkg id, e.g. com.viber.voip
+* `unblocker_rules.RULE1.apk.url` *optional string*: **Add url location of Android app**  
+	* e.g. "https://www.cubby.com/pl/Viber_3.0.2.5.apk/_efd19a1656ae4865886d0e738073de02"
+  * Note: Android 2.3 cannot use HTTPS links, only HTTP!
 * `unblocker_rules.RULE1.def-ext` *optional array of strings*: **Default extensions**  
   Default when undefined: `["gif","png","jpg","mp3","js","css","mp4","wmv","flv","swf","json","mkv"]`.  
   Note: `def-ext` is used by default by `if` cmds when undefined in `RULES1.cmds[].if[].ext`  
@@ -292,6 +299,30 @@ You can write rules for Android, but you cannot write rules ON Android (there is
 Create Android hscripts on your PC and share the link with yourself to test on Android. When you modify the hscript,
 your Android client will automatically receive the updated hscript.
 
+NEW! Add the Android application apk link to the hscript rule, so that users can automatically download and install once the hscript rule is enabled.
+Example:
+```json
+  {
+    "name": "Viber from Saudi Arabia",
+    "author": "Hola",
+    "site": "http://hola.org",
+    "unblocker_rules": {
+      "viber_app": {
+        "active": true,
+        "description": "Access Viber from Saudi Arabia (Android app)",
+        "link": "www.viber.com",
+        "icon": "http://viber.com/logo_viber.png",
+        "os": ["android"],
+        "apk": {"pkg": "com.viber.voip", "url": "https://www.cubby.com/pl/Viber_3.0.2.5.apk/_efd19a1656ae4865886d0e738073de02"},
+        "cmds": [{
+          "hosts": [
+            "aloha.viber.com", "secure.viber.com", "share.viber.com",
+	          "download.viber.com", "54.225.248.0/24"
+      }
+    }
+  }
+```
+    
 ## Recommend changes and feedback
 We would love your help to make the Hola API and hscript even better!  
 
