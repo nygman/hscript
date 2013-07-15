@@ -115,7 +115,8 @@ proxies is required for such a case, but should not be used in cases where not n
   send via the default path (usually directly to the web server).  
   The cmds are executed one after another. This is very similar in concept to iptables/ipf/firewall rule programming.  
 * `unblocker_rules.RULE1.cmds[].hosts[]` *required array*: **URL of host domain**  
-  Specify as many hosts as you need.  You can now also specify an IP range, e.g:
+  Specify as many hosts as you need.  
+  You can now also specify an IP range, e.g:  
   '108.175.32.0/24' -> 108.175.32.0 - 108.175.32.255, or  '108.175.32.123' === '108.175.32.123/32'
 * `unblocker_rules.RULE1.cmds[].if[]` *optional array*: **`if` can accept rules from either of 3 sources
   host, url and ext.**  
