@@ -103,11 +103,11 @@ proxies is required for such a case, but should not be used in cases where not n
   Default when undefined: `["windows","android"]`.  
   If the rule doesn't work for you on all OS/devices, then it's likely you will need to specify the host per
   OS/device as the site or app has different IPs from one OS/device to another.   
-* `unblocker_rules.RULE1.apk` *optional map*: **Add apk download feature for Android app (Android OS only)**
-* `unblocker_rules.RULE1.apk.pkg` *required string*: **Add pkg name of Android app**  
+* NEW! `unblocker_rules.RULE1.apk` *optional map*: **Add apk download feature for Android app (Android OS only)**
+* NEW! `unblocker_rules.RULE1.apk.pkg` *required string*: **Add pkg name of Android app**  
   * To find the pkg name of the app, go to http://play.google.com and search for application.  
   * From the URL address, copy the pkg id, e.g. com.viber.voip  
-* `unblocker_rules.RULE1.apk.url` *optional string*: **Add url location of Android app**  
+* NEW! `unblocker_rules.RULE1.apk.url` *optional string*: **Add url location of Android app**  
 	* e.g. "https://www.cubby.com/pl/Viber_3.0.2.5.apk/_efd19a1656ae4865886d0e738073de02"  
   * If no apk.url is defined, Hola will try to automatically download pkg apk from Play  
   Note: Android 2.3 cannot use HTTPS links, only HTTP!  
@@ -126,9 +126,10 @@ proxies is required for such a case, but should not be used in cases where not n
   The cmds are executed one after another. This is very similar in concept to iptables/ipf/firewall rule programming.  
 * `unblocker_rules.RULE1.cmds[].hosts[]` *required array*: **URL of host domain**  
   Specify as many hosts as you need.  
-  You can now also specify an IP range, e.g:  
-  "108.175.32.0/24" -> 108.175.32.0 - 108.175.32.255 [see ip range calculator](http://www.csgnetwork.com/ipinfocalc.html)  
-  "108.175.32.123' === '108.175.32.123/32"
+  *  NEW! You can now also specify an IP range  
+  Examples:
+  *  "108.175.32.0/24" -> 108.175.32.0 - 108.175.32.255 [see ip range calculator](http://www.csgnetwork.com/ipinfocalc.html)  
+  *  "108.175.32.123' === '108.175.32.123/32"
 * `unblocker_rules.RULE1.cmds[].if[]` *optional array*: **`if` can accept rules from either of 3 sources
   host, url and ext.**  
 * `unblocker_rules.RULE1.cmds[].if[].host` *optional array of strings*: **Hosts to be included in the routing**  
