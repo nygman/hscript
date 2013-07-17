@@ -81,18 +81,20 @@ proxies is required for such a case, but should not be used in cases where not n
   Currently not displayed.  
 * `unblocker_rules` *required map*: **Routing rules for the sites to Unblock**  
 * `unblocker_rules.RULE1` *required map*: **Unblocker rule/site ID**  
-  Replace `RULE1` with the rule ID.
-  * `unblocker_rules.fb` for unblocking facebook.com  
-  * `unblocker_rules.wiki` for unblocking wikipedia.com  
-  * `unblocker_rules.goog-us` for unblocking google.com via the US  
-  One hscript package can have multiple rules/sites. User can enable each site independently. 
+  Replace `RULE1` with the rule ID.  
+  * One hscript package can have multiple rules/sites. User can enable each site independently.  
+  * NEW! You can now add spaces in the rule ID  
+  Examples:  
+  * `unblocker_rules.facebook` for unblocking facebook.com  
+  * `unblocker_rules.wiki website` for unblocking wikipedia.com  
+  * `unblocker_rules.google from us` for unblocking google.com via the US  
 * `unblocker_rules.RULE1.description` *optional string*: **Description of the rule**   
 * `unblocker_rules.RULE1.link` *optional string*: **URL of the site this rule Unblocks**   
 * `unblocker_rules.RULE1.icon` *optional string*: **Image URL of the rule/site**  
 * `unblocker_rules.RULE1.root_url` *optional array of strings*:
-  * An array of urls that identify the root site.
-  * Each url can be an exact site or a url pattern matching.
-  * Examples:  
+  * An array of urls that identify the root site.  
+  * Each url can be an exact site or a url pattern matching.  
+  Examples:  
   * http://www.site.com (match www.site.com and www.site.com/xxx)  
   * \*://\*.site.com/** (match a.site.com/xxx but not a.b.site.com/xxx)  
   * \*://\*\*.site.com/** (match a.site.com/xxx and a.b.site.com/xxx)  
