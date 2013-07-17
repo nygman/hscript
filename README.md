@@ -3,6 +3,7 @@ A scripting language for configuring the [Hola Unblocker VPN](http://hola.org) t
 * Unblock sites by creating a script for configuring routing rules (hscript) for use with the Hola Unblocker VPN  
 * Create an hscript package by including several rules within one hscript  
 * Easily share your hscript by posting a simple URL on your site, Facebook, Twitter, email, etc.  
+* **NEW!** You can now modify and update your hscripts. Anyone using the script will receive the updates automatically!  
 
 Know **iptables**? You'll find writing hscript rules a breeze!  
 We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule development.  
