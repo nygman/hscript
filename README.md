@@ -1,15 +1,15 @@
 # hscript: Hola Unblocker Script
-A scripting language for configuring the [Hola Unblocker VPN](http://hola.org) that lets you:  
+A scripting language for configuring the [Hola Unblocker VPN](https://hola.org) that lets you:  
 * Unblock sites by creating a script for configuring routing rules (hscript) for use with the Hola Unblocker VPN  
 * Create an hscript package by including several rules within one hscript  
 * Easily share your hscript by posting a simple URL on your site, Facebook, Twitter, email, etc.  
-* **NEW!** You can now modify and update your hscripts. Anyone using the script will receive the updates automatically!  
+* **NEW!** You can now edit and update your hscripts. Anyone using the script will receive the updates automatically!  
 
 Know **iptables**? You'll find writing hscript rules a breeze!  
 We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule development.  
 
 ## hscript package example:
-**[Redirect Demo](http://hola.org/unblocker?hscript=ca7bb33efed0bc08):**
+**[Redirect Demo](https://hola.org/unblocker?hscript=ca7bb33efed0bc08):**
 ```json
   {
     "name": "Redirect Demo",
@@ -42,7 +42,7 @@ We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule d
 > Access the website by routing ONLY the URLs that are authenticated through peers in that country  
 (and leave the rest of the URLs unrouted).
 
-**[Facebook Demo - Android](http://hola.org/share?sid=0232ffff56b8ab0f):**
+**[Facebook Demo - Android](https://hola.org/share?sid=0232ffff56b8ab0f):**
 ```json
   {
     "name": "Facebook Demo",
@@ -250,12 +250,12 @@ as the fast path matching of hosts is more accurate and we don't waste time on s
 Creating new hscripts is easy!  
 
 1. Get started by finding a script with functionality similar to what you need to use as a template:  
-  * From existing hscripts: from the [Unblocker settings page](http://client.hola.org/client_cgi/),
+  * From existing hscripts: from the [Unblocker settings page](https://client.hola.org/client_cgi/),
     press 'Create a new rule (power users)' and then 'View script...' on any of the site buttons
     that are similar to what you want to accomplish
   * or from similar scripts on the web: Search for "hscript" + site name
   * or from one of the examples on this Github page
-  * or start with a new rule template: From the [Unblocker settings page](http://client.hola.org/client_cgi/),
+  * or start with a new rule template: From the [Unblocker settings page](https://client.hola.org/client_cgi/),
     press 'Create a new rule (power users)' then 'Create new script'
 2. Modify the template: Use the API reference on this page to modify the template to your needs
 3. Share your hscript:
@@ -264,10 +264,10 @@ Creating new hscripts is easy!
   * Create your own hscript page with links to all the hsripts that you recommend for others to use
   * or Fork this Github repository, then create your own hscripts.
   * To see how this works, try sending an hscript link now with the Hola Redirect Demo
-    [http://hola.org/unblocker?hscript=0ca1bf7f4747e408&sites=maxmind_US+maxmind_GB+maxmind_ES](http://hola.org/unblocker?hscript=0ca1bf7f4747e408&sites=maxmind_US+maxmind_GB+maxmind_ES)  
+    [https://hola.org/unblocker?hscript=0ca1bf7f4747e408&sites=maxmind_US+maxmind_GB+maxmind_ES](http://hola.org/unblocker?hscript=0ca1bf7f4747e408&sites=maxmind_US+maxmind_GB+maxmind_ES)  
 
 ## Installing Hola Unblocker
-[Hola](http://hola.org) is available for Windows/Android/Chrome/Firefox.  
+[Hola](https://hola.org) is available for Windows/Android/Chrome/Firefox.  
 Linux/Mac/Chrome OS is supported by the Hola Unblocker extension for Chrome and Firefox browsers.  
 
 ## Sharing hscripts
@@ -277,9 +277,9 @@ Linux/Mac/Chrome OS is supported by the Hola Unblocker extension for Chrome and 
   * Create your own hscript page with links to all the hscripts that you recommend for others to use
   * or Fork this Github repository, then create your own hscripts.
   * To see how this works, try sending an hscript link now with the 
-    [http://hola.org/unblocker?hscript=0ca1bf7f4747e408&sites=maxmind_US+maxmind_GB+maxmind_ES] Redirect Demo  
+    [https://hola.org/unblocker?hscript=0ca1bf7f4747e408&sites=maxmind_US+maxmind_GB+maxmind_ES] Redirect Demo  
   * Sharing link syntax:
-    http://hola.org/unblocker?hscript=sid&enable=site1+site2&sites=sites1+sites2
+    https://hola.org/unblocker?hscript=sid&enable=site1+site2&sites=sites1+sites2
     * hscript: the hscript id of the hscript you want to share
     * enable: optional, list of rules that will be enabled by default upon hscript import
     * sites: optional, list of domains that the hscript Unblocks
@@ -294,11 +294,6 @@ You can use it as a base for your own rules, and then create your own hscripts p
 
 Want to be a maintainer of a list of hscripts? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>
 
-## Modifying and editing hscript rules
-We plan on adding better editing features in the coming weeks, including the ability to edit and modify rules easily.
-For now, you will need to create, test and re-create, and so on. Please delete old and non-functioning rules.
-If you have suggestions or examples on how you think the creation and editing should work, send your ideas to api@hola.org.
-
 ## Android tips
 You can write rules for Android, but you cannot write rules ON Android (there is no proper development environment).
 Create Android hscripts on your PC and share the link with yourself to test on Android. When you modify the hscript,
@@ -310,7 +305,7 @@ Example:
   {
     "name": "Viber from Saudi Arabia",
     "author": "Hola",
-    "site": "http://hola.org",
+    "site": "https://hola.org",
     "unblocker_rules": {
       "viber_app": {
         "active": true,
