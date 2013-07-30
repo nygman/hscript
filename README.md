@@ -92,9 +92,8 @@ proxies is required for such a case, but should not be used in cases where not n
 * `unblocker_rules.RULE1.description` *optional string*: **Description of the rule**   
 * `unblocker_rules.RULE1.link` *optional string*: **URL of the site this rule Unblocks**   
 * `unblocker_rules.RULE1.icon` *optional string*: **Image URL of the rule/site**  
-* `unblocker_rules.RULE1.root_url` *optional array of strings*:
-  * An array of urls that identify the root site.  
-  * Each url can be an exact site or a url pattern matching.  
+* `unblocker_rules.RULE1.root_url` *optional array of strings*: **Array of URLs that identify the root site**  
+  * Each URL can be an exact site or a URL pattern matching.  
   Examples:  
   * http://www.site.com (match www.site.com and www.site.com/xxx)  
   * \*://\*.site.com/** (match a.site.com/xxx but not a.b.site.com/xxx)  
@@ -131,14 +130,12 @@ proxies is required for such a case, but should not be used in cases where not n
   Examples:
   *  "108.175.32.0/24" -> 108.175.32.0 - 108.175.32.255 [see ip range calculator](http://www.csgnetwork.com/ipinfocalc.html)  
   *  "108.175.32.123' === '108.175.32.123/32"
-* `unblocker_rules.RULE1.cmds[].if[]` *optional array*: **`if` can accept rules from either of 3 sources
-  host, url and ext.**  
+* `unblocker_rules.RULE1.cmds[].if[]` *optional array*: **`if` can accept rules from either of 3 host sources, URL and ext.**  
 * `unblocker_rules.RULE1.cmds[].if[].host` *optional array of strings*: **Hosts to be included in the routing**  
   e.g. `"if": [{"host": "^subdomain.\*\\.domain\\.com$", "type": "=~", "then": "DIRECT"}]`  
 * `unblocker_rules.RULE1.cmds[].if[].url` *optional array of strings*: **URLs to be included in the routing**  
   e.g. `"if": [{"url": "http://subdomain.domain.com/geoip_check", "type": "!=", "then": "DIRECT"}]`  
-* `unblocker_rules.RULE1.cmds[].if[].ext` *optional array of strings*: **File extensions to be
-  included in the routing**  
+* `unblocker_rules.RULE1.cmds[].if[].ext` *optional array of strings*: **File extensions to be included in the routing**  
   Define `ext` commands when you need to modify the default extension list.  
   e.g. `"if": [{"ext": "aaa", "type": "==", "then": "PROXY US"}]`  
 * `unblocker_rules.RULE1.cmds[].if[].type` *optional string*: **Comparison method for `host`/`url`/`ext`**  
