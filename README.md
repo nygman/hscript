@@ -191,6 +191,7 @@ proxies is required for such a case, but should not be used in cases where not n
   (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Singapore%20Maintainer">Email us</a>)  
   * `"PROXY HK"` Route through Hong Kong 
   (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Hong%20Kong%20Maintainer">Email us</a>)  
+  <a href="https://github.com/hola/hscript/blob/master/README.md#become-a-country-maintainer">Become a Country maintainer</a>  
   We'll be adding more countries soon!
   <a href="mailto:api@hola.org?Subject=Request%20to%20add%20a%20new%20hscript%20region">
   Send a request to add a new country</a>  
