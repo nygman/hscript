@@ -3,7 +3,7 @@ A scripting language for configuring the [Hola Unblocker VPN](https://hola.org) 
 * Unblock sites by creating a script for configuring routing rules (hscript) for use with the Hola Unblocker VPN  
 * Create an hscript package by including several rules within one hscript  
 * Easily share your hscript by posting a simple URL on your site, Facebook, Twitter, email, etc.  
-* **NEW!** You can now edit and update your hscripts. Anyone using the script will receive the updates automatically!  
+* Edit and update your hscripts. Anyone using the script will receive the updates automatically!  
 
 Know **iptables**? You'll find writing hscript rules a breeze!  
 We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule development.  
@@ -84,7 +84,7 @@ proxies is required for such a case, but should not be used in cases where not n
 * `unblocker_rules.RULE1` *required map*: **Unblocker rule/site ID**  
   Replace `RULE1` with the rule ID.  
   * One hscript package can have multiple rules/sites. User can enable each site independently.  
-  * NEW! You can now add spaces in the rule ID  
+  * You can now add spaces in the rule ID  
   Examples:  
   * `unblocker_rules.facebook` for unblocking facebook.com  
   * `unblocker_rules.wiki website` for unblocking wikipedia.com  
@@ -103,11 +103,11 @@ proxies is required for such a case, but should not be used in cases where not n
   Default when undefined: `["windows","android"]`.  
   If the rule doesn't work for you on all OS/devices, then it's likely you will need to specify the host per
   OS/device as the site or app has different IPs from one OS/device to another.   
-* NEW! `unblocker_rules.RULE1.apk` *optional map*: **Add Android app APK download feature**
-* NEW! `unblocker_rules.RULE1.apk.pkg` *required string*: **Add Android app pkg name**  
+* `unblocker_rules.RULE1.apk` *optional map*: **Add Android app APK download feature**
+* `unblocker_rules.RULE1.apk.pkg` *required string*: **Add Android app pkg name**  
   * To find the pkg name of the app, go to http://play.google.com and search for application.  
   * From the URL address, copy the pkg id, e.g. org.hola  
-* NEW! `unblocker_rules.RULE1.apk.url` *optional string*: **Add Android app APK download URL location**  
+* `unblocker_rules.RULE1.apk.url` *optional string*: **Add Android app APK download URL location**  
   * e.g. "https://www.cubby.com/pl/Viber_3.0.2.5.apk/_efd19a1656ae4865886d0e738073de02"  
   * If no apk.url is defined, Hola will try to automatically download pkg APK file from Play  
   Note: Android 2.3 cannot use HTTPS links, only HTTP!  
@@ -126,7 +126,7 @@ proxies is required for such a case, but should not be used in cases where not n
   The cmds are executed one after another. This is very similar in concept to iptables/ipf/firewall rule programming.  
 * `unblocker_rules.RULE1.cmds[].hosts[]` *required array*: **URL of host domain**  
   Specify as many hosts as you need.  
-  *  NEW! You can now also specify an IP range  
+  * You can now also specify an IP range  
   Examples:
   *  "108.175.32.0/24" -> 108.175.32.0 - 108.175.32.255 [see ip range calculator](http://www.csgnetwork.com/ipinfocalc.html)  
   *  "108.175.32.123' === '108.175.32.123/32"
@@ -275,7 +275,7 @@ You can write rules for Android, but you cannot write rules ON Android (there is
 Create Android hscripts on your PC and share the link with yourself to test on Android. When you modify the hscript,
 your Android client will automatically receive the updated hscript.
 
-NEW! Add the Android application APK download URL link to the hscript rule, so that users can automatically download and install once the hscript rule is enabled.
+Add the Android application APK download URL link to the hscript rule, so that users can automatically download and install once the hscript rule is enabled.
 Example:
 ```json
   {
