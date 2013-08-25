@@ -319,6 +319,18 @@ Example:
     }
   }
 ```
+
+## Become a Country maintainer
+Hola creates the generic VPN technology, but you can make Hola Unblocker more powerful for other Hola users.
+How? Start a A website, blog or social media page to collect, create and share Unblocker hscripts, so that other users can easily add more sites and web apps to their Hola Unblocker.
+
+Get started by forking this Github project and reading the API documention. Then, start creating your own hscripts, copying other scripts into your project (start by pulling the fork requests we 
+receive from other users) and publishing both the hscript json code and hscipt links.
+
+hscript feature highlights:
+* Hscript packages: one link lets users add a collection of sites to unblock
+* Editing scripts: it's easy, and users automatically receive your updates
+* Android: include a link to download the APK file for Android apps you unblock
     
 ## Recommend changes and feedback
 We would love your help to make the Hola API and hscript even better!  
