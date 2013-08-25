@@ -147,50 +147,28 @@ proxies is required for such a case, but should not be used in cases where not n
   * `not_in` array not matching.  
 * `unblocker_rules.RULE1.cmds[].if[].then` *optional string*: **Route directly or via VPN**  
   * `"DIRECT"` Don't proxy. Send requests directly from your browser to the web server.  
-  * `"PROXY US"` Route through the United States 
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=US%20Maintainer">Email us</a>)  
-  * `"PROXY GB"` Route through the United Kingdom
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=UK%20Maintainer">Email us</a>)  
-  * `"PROXY ES"` Route through Spain
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Spain%20Maintainer">Email us</a>)  
-  * `"PROXY DE"` Route through Germany
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Germany%20Maintainer">Email us</a>)  
-  * `"PROXY FR"` Route through France
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=France%20Maintainer">Email us</a>)  
-  * `"PROXY RU"` Route through Russia
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Russia%20Maintainer">Email us</a>)  
-  * `"PROXY AU"` Route through Australia
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Australia%20Maintainer">Email us</a>)  
-  * `"PROXY CA"` Route through Canada
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Canada%20Maintainer">Email us</a>)  
-  * `"PROXY IT"` Route through Italy
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Italy%20Maintainer">Email us</a>)  
-  * `"PROXY SE"` Route through Sweden
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Sweden%20Maintainer">Email us</a>)  
-  * `"PROXY CL"` Route through Chile 
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Chile%20Maintainer">Email us</a>)  
-  * `"PROXY NL"` Route through the Netherlands 
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Netherlands%20Maintainer">Email us</a>)  
-  * `"PROXY IE"` Route through Ireland 
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Ireland%20Maintainer">Email us</a>)  
-  * `"PROXY DK"` Route through Denmark 
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Denmark%20Maintainer">Email us</a>)  
-  * `"PROXY IN"` Route through India 
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=India%20Maintainer">Email us</a>)  
-  * `"PROXY EG"` Route through Egypt 
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Egypt%20Maintainer">Email us</a>)  
-  * `"PROXY CH"` Route through Switzerland 
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Switzerland%20Maintainer">Email us</a>)  
-  * `"PROXY BR"` Route through Brazil 
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Brazil%20Maintainer">Email us</a>)  
-  * `"PROXY TR"` Route through Turkey 
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Turkey%20Maintainer">Email us</a>)  
-  * `"PROXY PL"` Route through Poland 
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Poland%20Maintainer">Email us</a>)  
-  * `"PROXY SG"` Route through Singapore 
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Singapore%20Maintainer">Email us</a>)  
-  * `"PROXY HK"` Route through Hong Kong 
-  (want to be a country maintainer? <a href="mailto:api@hola.org?Subject=Hong%20Kong%20Maintainer">Email us</a>)  
+  * `"PROXY US"` Route through the United States  
+  * `"PROXY GB"` Route through the United Kingdom  
+  * `"PROXY ES"` Route through Spain  
+  * `"PROXY DE"` Route through Germany  
+  * `"PROXY FR"` Route through France  
+  * `"PROXY RU"` Route through Russia  
+  * `"PROXY AU"` Route through Australia  
+  * `"PROXY CA"` Route through Canada  
+  * `"PROXY IT"` Route through Italy  
+  * `"PROXY SE"` Route through Sweden  
+  * `"PROXY CL"` Route through Chile  
+  * `"PROXY NL"` Route through the Netherlands  
+  * `"PROXY IE"` Route through Ireland  
+  * `"PROXY DK"` Route through Denmark  
+  * `"PROXY IN"` Route through India  
+  * `"PROXY EG"` Route through Egypt  
+  * `"PROXY CH"` Route through Switzerland  
+  * `"PROXY BR"` Route through Brazil  
+  * `"PROXY TR"` Route through Turkey  
+  * `"PROXY PL"` Route through Poland  
+  * `"PROXY SG"` Route through Singapore  
+  * `"PROXY HK"` Route through Hong Kong  
   <a href="https://github.com/hola/hscript/blob/master/README.md#become-a-country-maintainer">Become a Country maintainer</a>  
   We'll be adding more countries soon!
   <a href="mailto:api@hola.org?Subject=Request%20to%20add%20a%20new%20hscript%20region">
