@@ -184,13 +184,13 @@ proxies is required for such a case, but should not be used in cases where not n
   `"PROXY DK"`, `"PROXY IN"`, `"PROXY EG"`, `"PROXY CH"`, `"PROXY BR"`, `"PROXY TR"`  
 
 ### Script debug
-- This feature is only available for the Hola client for Windows (not the Hola Unblocker browser extensions for Chrome & Firefox).
-- To enter debug mode click "Developer mode" then "Create new script". To disable debug mode click "Simple mode".
-- In debug mode, Hola will add 'X-Hola-Unblocker-Debug' response header to any http request (you can view all network traffic using Chrome Developer Tools and selecting the network tab).
-- X-Hola-Unblocker-Debug syntax:
-  - "rule xxx js direct" the request was captured by rule xxx but the traffic was sent directly without using a vpn proxy.
-  - "rule xxx country us cpnnn" the request was captured by rule xxx and the traffic was sent to a US proxy (where nnn is an integer).
-  - "rule xxx 'type' direct" e.g. 'rule cnn jpg direct' where rule 'cnn' has captured this url but it was identified as type 'jpg' which is marked for 'direct' download by the 'cnn' rule.
+* This feature is only available for the Hola client for Windows (not the Hola Unblocker browser extensions for Chrome & Firefox).
+* To enter debug mode click "Developer mode" then "Create new script". To disable debug mode click "Simple mode".
+* In debug mode, Hola will add 'X-Hola-Unblocker-Debug' response header to any http request (you can view all network traffic using Chrome Developer Tools and selecting the network tab).
+* X-Hola-Unblocker-Debug syntax:
+  * "rule xxx js direct" the request was captured by rule xxx but the traffic was sent directly without using a vpn proxy.
+  * "rule xxx country us cpnnn" the request was captured by rule xxx and the traffic was sent to a US proxy (where nnn is an integer).
+  * "rule xxx 'type' direct" e.g. 'rule cnn jpg direct' where rule 'cnn' has captured this url but it was identified as type 'jpg' which is marked for 'direct' download by the 'cnn' rule.
 
 ### Note on performance
 Further explanation of `"host"` and fast vs. slow matching:  
