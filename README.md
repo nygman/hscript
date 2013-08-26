@@ -242,34 +242,6 @@ Creating new hscripts is easy!
   * To see how this works, try sending an hscript link now with the Hola Redirect Demo
     [https://hola.org/unblocker?hscript=0ca1bf7f4747e408&sites=maxmind_US+maxmind_GB+maxmind_ES](http://hola.org/unblocker?hscript=0ca1bf7f4747e408&sites=maxmind_US+maxmind_GB+maxmind_ES)  
 
-## Installing Hola Unblocker
-[Hola](https://hola.org) is available for Windows/Android/Chrome/Firefox.  
-Linux/Mac/Chrome OS is supported by the Hola Unblocker extension for Chrome and Firefox browsers.  
-
-## Sharing hscripts
-
-  * When you create an hscript (or when you press 'share' on an hscript), you receive a unique link
-    to the hscript which you can post or share online with other Hola users
-  * Create your own hscript page with links to all the hscripts that you recommend for others to use
-  * or Fork this Github repository, then create your own hscripts.
-  * To see how this works, try sending an hscript link now with the 
-    [https://hola.org/unblocker?hscript=0ca1bf7f4747e408&sites=maxmind_US+maxmind_GB+maxmind_ES] Redirect Demo  
-  * Sharing link syntax:
-    https://hola.org/unblocker?hscript=sid&enable=site1+site2&sites=sites1+sites2
-    * hscript: the hscript id of the hscript you want to share
-    * enable: optional, list of rules that will be enabled by default upon hscript import
-    * sites: optional, list of domains that the hscript Unblocks
-
-## Publicizing your hscripts
-
-Help the community by sharing your hscripts on Github!
-This will help other users develop their own rules based on your creations.
-
-If you don't already have a Github account, [open one](http://github.com) (it's free!) and fork our hscript project.
-You can use it as a base for your own rules, and then create your own hscripts projects which can be forked and shared.
-
-Want to be a maintainer of a list of hscripts? <a href="mailto:api@hola.org?Subject=Maintainer">Email us</a>
-
 ## Android tips
 You can write rules for Android, but you cannot write rules ON Android (there is no proper development environment).
 Create Android hscripts on your PC and share the link with yourself to test on Android. When you modify the hscript,
@@ -299,9 +271,35 @@ Example:
   }
 ```
 
+## Installing Hola Unblocker
+[Hola](https://hola.org) is available for Windows/Android/Chrome/Firefox.  
+Linux/Mac/Chrome OS is supported by the Hola Unblocker extension for Chrome and Firefox browsers.  
+
+## Sharing hscripts
+
+  * When you create an hscript (or when you press 'share' on an hscript), you receive a unique link
+    to the hscript which you can post or share online with other Hola users
+  * Create your own hscript page with links to all the hscripts that you recommend for others to use
+  * or Fork this Github repository, then create your own hscripts.
+  * To see how this works, try sending an hscript link now with the 
+    [https://hola.org/unblocker?hscript=0ca1bf7f4747e408&sites=maxmind_US+maxmind_GB+maxmind_ES] Redirect Demo  
+  * Sharing link syntax:
+    https://hola.org/unblocker?hscript=sid&enable=site1+site2&sites=sites1+sites2
+    * hscript: the hscript id of the hscript you want to share
+    * enable: optional, list of rules that will be enabled by default upon hscript import
+    * sites: optional, list of domains that the hscript Unblocks
+
+## Publicizing your hscripts
+
+Help the community by sharing your hscripts on Github!
+This will help other users develop their own rules based on your creations.
+
+If you don't already have a Github account, [open one](http://github.com) (it's free!) and fork our hscript project.
+You can use it as a base for your own rules, and then create your own hscripts projects which can be forked and shared.
+
 ## Become a Country maintainer
 Hola creates the generic VPN technology, but you can make Hola Unblocker more powerful for other Hola users.
-How? Start a A website, blog or social media page to collect, create and share Unblocker hscripts, so that other users can easily add more sites and web apps to their Hola Unblocker.
+How? Start a website, blog or social media page to collect, create and share Unblocker hscripts, so that other users can easily add more sites and web apps to their Hola Unblocker.
 
 Get started by forking this Github project and reading the API documention. Then, start creating your own hscripts, copying other scripts into your project (start by pulling the fork requests we 
 receive from other users) and publishing both the hscript json code and hscipt links.
