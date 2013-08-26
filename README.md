@@ -305,7 +305,7 @@ Get started by forking this Github project and reading the API documention. Then
 receive from other users) and publishing both the hscript json code and hscipt links.
 
 hscript feature highlights:
-* Hscript packages: one link lets users add a collection of sites to unblock
+* hscript packages: one link lets users add a collection of sites to unblock
 * Editing scripts: it's easy, and users automatically receive your updates
 * Android: include a link to download the APK file for Android apps you unblock
     
