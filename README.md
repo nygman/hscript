@@ -21,18 +21,21 @@ We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule d
       "maxmind_UK": {
         "description": "Route requests to Maxmind from the UK",
         "link": "maxmind.com/en/locate_my_ip",
+        "root_url": ["**.maxmind.com"],
         "icon": "http://icongal.com/gallery/image/132178/uk_flag.png",
         "cmds": [{"hosts": ["maxmind.com"], "then": "PROXY GB"}]
       },
       "maxmind_US": {
         "description": "Route requests to Maxmind from the US",
         "link": "maxmind.com/en/locate_my_ip",
+        "root_url": ["**.maxmind.com"],
         "icon": "http://icongal.com/gallery/image/229138/us_flag.png",
         "cmds": [{"hosts": ["maxmind.com"], "then": "PROXY US"}]
       },
       "maxmind_ES": {
         "description": "Route requests to Maxmind from Spain",
         "link": "maxmind.com/en/locate_my_ip",
+        "root_url": ["**.maxmind.com"],
         "icon": "http://icongal.com/gallery/image/8135/es_flag.png",
         "cmds": [{"hosts": ["maxmind.com"], "then": "PROXY ES"}]
       }
@@ -54,6 +57,7 @@ We recommend using **FireBug** or **Chrome Developer Tools** to assist in rule d
       "facebook": {
         "description": "Unblock Facebook app",
         "link": "facebook.com",
+        "root_url": ["**.facebook.com"],
         "icon": "http://icongal.com/gallery/image/11148/facebook.png",
         "os": ["android"],
         "cmds": [{
@@ -92,7 +96,7 @@ proxies is required for such a case, but should not be used in cases where not n
 * `unblocker_rules.RULE1.description` *optional string*: **Description of the rule**   
 * `unblocker_rules.RULE1.link` *optional string*: **URL of the site this rule Unblocks**   
 * `unblocker_rules.RULE1.icon` *optional string*: **Image URL of the rule/site**  
-* `unblocker_rules.RULE1.root_url` *optional array of strings*: **Array of URLs that identify the root site**  
+* `unblocker_rules.RULE1.root_url` *required array of strings*: **Array of URLs that identify the root site**  
   * Each URL can be an exact site or a URL pattern matching.  
   Examples:  
   * http://www.site.com (match www.site.com and www.site.com/xxx)  
@@ -259,6 +263,7 @@ Example:
         "active": true,
         "description": "Access Viber from Saudi Arabia (Android app)",
         "link": "www.viber.com",
+        "root_url": ["**.viber.com"],
         "icon": "http://viber.com/logo_viber.png",
         "os": ["android"],
         "apk": {"pkg": "com.viber.voip", "url": "https://www.cubby.com/pl/Viber_3.0.2.5.apk/_efd19a1656ae4865886d0e738073de02"},
