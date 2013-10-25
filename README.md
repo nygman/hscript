@@ -313,6 +313,11 @@ hscript feature highlights:
 * hscript packages: one link lets users add a collection of sites to unblock
 * Editing scripts: it's easy, and users automatically receive your updates
 * Android: include a link to download the APK file for Android apps you unblock
+
+## Help us translate Hola!
+Improve a translation or add a translation to another language through one of this sites:
+* github.com/hola/translate
+* http://hola.org/translate.html
     
 ## Recommend changes and feedback
 We would love your help to make the Hola API and hscript even better!  
