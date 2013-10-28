@@ -316,7 +316,7 @@ hscript feature highlights:
 
 ## Help us translate Hola!
 Improve a translation or add a translation to another language through one of this sites:
-* github.com/hola/translate
+* http://github.com/hola/translate
 * http://hola.org/translate.html
     
 ## Recommend changes and feedback
