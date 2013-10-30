@@ -1,0 +1,29 @@
+{
+  "_comment" : "This file is done for educational purposes only. Do not break the law :-)",
+        "author": "Daniel Graziotin",
+        "site": "http://task3.cc",
+        "name": "Channel4",
+        "description": "Access Channel 4 from countries that block it or from behind a corporate Firewall. Android only, 4OD included.",
+        "unblocker_rules": {
+                "channel4": {
+                        "description": "Unblock Channel 4 app",
+                        "link": "channel4.com",
+                        "icon": "http://d8si6upl43lp1.cloudfront.net/static/4nav/1.12.5/images/header-4od.png",
+                        "os": [
+                                "android"
+                        ],
+                        "cmds": [
+                                {
+                                        "hosts": [
+                                                "channel4.com",
+                                                "m.channel4.com",
+                                                "4id.channel4.com",
+                                                "www.channel4.com"
+                                        ],
+                                        "dst_dns": "true",
+                                        "then": "PROXY GB"
+                                }
+                        ]
+                }
+        }
+}
